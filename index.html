@@ -40,6 +40,8 @@
     .dark .type-faction { background:#450a0a; color:#fecaca; }
     .kbd { border:1px solid var(--card-border); padding:0 .25rem; border-radius:.25rem; font-size:.75rem; background:#fff; }
     .dark .kbd { background:#0b1220; }
+    .avatar-50 { width:50px; height:50px; border-radius:9999px; object-fit:cover; }
+    .avatar-ring { box-shadow: 0 0 0 2px var(--card-bg), 0 0 0 3px var(--card-border); }
     .clamp-1 { display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; }
     .card { background:var(--card-bg); border:1px solid var(--card-border); border-radius: .75rem; box-shadow: 0 1px 1px rgba(0,0,0,.04); }
     .card-pad { padding: 1rem; }
@@ -77,6 +79,7 @@
           <button data-filter="tag:lore" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Lore</button>
           <button data-filter="tag:gods" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Gods</button>
           <button data-filter="tag:spells" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Spells</button>
+          <button data-filter="tag:sounds" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Sounds</button>
         </div>
       </div>
       <nav class="flex items-center gap-2 text-sm relative">
@@ -173,6 +176,7 @@
         id: 'npc-harshnag-the-grim',
         title: 'Harshnag the Grim (NPC)',
         type: 'npc',
+        img: 'https://via.placeholder.com/50?text=HN',
         tags: ['giants','ally','frost-giant'],
         body: `A battle-hardened **frost giant** who opposes the Ordning's chaos.\n\n- Favors mortals who stand against monstrous giants.\n- Often roams the **Spine of the World**.\n- Can guide the party to the **Eye of the All-Father**.`
       },
@@ -240,6 +244,12 @@
       return `<span class="type-badge type-${cls}">${label}</span>`;
     }
     // --- Helpers ---
+    function avatarImg(n){
+      if (n && n.type === 'npc' && n.img) {
+        return `<img src="${escapeHtml(n.img)}" alt="${escapeHtml(n.title)}" class="avatar-50 avatar-ring">`;
+      }
+      return '';
+    }
     function indexOfId(list, id) { return list.findIndex(n => n.id === id); }
 
     function normalize(s) { return (s || '').toLowerCase(); }
@@ -299,12 +309,17 @@
       }
       elResultList.innerHTML = items.map((n, i) => `
         <li class="note-row px-4 py-3 hover:bg-slate-100 dark:hover:bg-slate-800 ${i === state.activeIndex ? 'bg-slate-100 dark:bg-slate-800' : ''}" data-id="${n.id}" data-index="${i}">
-          <div class="flex items-center justify-between">
-            <div class="font-medium">${n.title}</div>
-            ${typeBadge(n.type)}
+          <div class="flex items-start gap-3">
+            ${avatarImg(n)}
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center justify-between">
+                <div class="font-medium clamp-1">${n.title}</div>
+                ${typeBadge(n.type)}
+              </div>
+              <div class="text-sm text-slate-600 clamp-1">${escapeHtml((n.body || '').replace(/\n/g,' ')).slice(0, 140)}…</div>
+              <div class="mt-1 flex flex-wrap gap-1">${(n.tags||[]).map(t => `<span class="tag">${t}</span>`).join('')}</div>
+            </div>
           </div>
-          <div class="text-sm text-slate-600 clamp-1">${escapeHtml((n.body || '').replace(/\n/g,' ')).slice(0, 140)}…</div>
-          <div class="mt-1 flex flex-wrap gap-1">${(n.tags||[]).map(t => `<span class="tag">${t}</span>`).join('')}</div>
         </li>
       `).join('');
     }
@@ -328,10 +343,15 @@
       if (idx === -1) return;
       const n = state.notes[idx];
       const html = `
-        <h2 class="mt-0 font-extrabold">${n.title}</h2>
-        <div class="mt-2 mb-3 flex items-center gap-2 flex-wrap">
-          ${typeBadge(n.type)}
-          <div class="flex flex-wrap gap-1">${(n.tags||[]).length ? (n.tags||[]).map(t => `<span class=\"tag\">${t}</span>`).join('') : '<span class="text-sm text-slate-400">—</span>'}</div>
+        <div class="flex items-center gap-3">
+          ${avatarImg(n)}
+          <div>
+            <h2 class="mt-0 mb-0 font-extrabold">${n.title}</h2>
+            <div class="mt-2 mb-3 flex items-center gap-2 flex-wrap">
+              ${typeBadge(n.type)}
+              <div class="flex flex-wrap gap-1">${(n.tags||[]).length ? (n.tags||[]).map(t => `<span class=\"tag\">${t}</span>`).join('') : '<span class="text-sm text-slate-400">—</span>'}</div>
+            </div>
+          </div>
         </div>
         <hr class="mb-3"/>
         <div class="mt-2">${md(escapeHtml(n.body))}</div>
