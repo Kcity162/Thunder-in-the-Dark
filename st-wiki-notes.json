@@ -60,6 +60,55 @@
     "body": "# Serissa\n\n- Youngest daughter of King Hekaton and Queen Neri; named heir to the Wyrmskull Throne.\n- Compassionate and thoughtful; shares her mother’s respect for small folk and desire for peace.\n- Took the throne after Hekaton vanished, encouraged by her uncle Uthor.\n- Struggles to command authority; many giant lords have left her court to pursue their own ambitions.\n- Holds the Korolnor Scepter, a relic granting mastery of the throne, but remains isolated.\n- Distrusted by her sisters, manipulated by Iymrith, and doubted by advisors.\n- Seeks allies beyond giantkind, hoping heroes among the small folk can uncover her father’s fate and restore stability."
   },
   {
+    "id": "session-01-iymrith",
+    "title": "Chapter 1 — Iymrith",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1"],
+    "body": "# Iymrith\n\n- An **ancient blue dragon** able to assume storm giant form.\n- Infiltrated King Hekaton’s court while disguised.\n- Pretends to counsel Serissa but secretly manipulates Mirran and Nym.\n- Goals:\n  - Drive giants into war with small folk.\n  - Seize the **Wyrmskull Throne** for her hoard.\n- Aligned with the **Kraken Society**:\n  - Introduced Mirran and Nym to agents of **Slarkrethel**, the legendary kraken.\n  - Used them to orchestrate Queen Neri’s assassination.\n  - Spread rumors blaming the **Lords’ Alliance**.\n- Seeks destruction of the Lords’ Alliance as it threatens dragonkind."
+  },
+  {
+    "id": "session-01-giant-lords",
+    "title": "Chapter 1 — The Giant Lords",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1"],
+    "body": "# The Giant Lords\n\n- With Hekaton missing, five giant lords pursue power to reshape the **Ordning**.\n- Each hopes to be elevated to the pinnacle of giantkind by divine favor."
+  },
+  {
+    "id": "session-01-chief-guh",
+    "title": "Chapter 1 — Chief Guh",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1", "hill-giants"],
+    "body": "# Chief Guh\n\n- Gluttonous **hill giant** matriarch in the Dessarin Valley.\n- Built an enormous timber steading northeast of Goldenfields.\n- Commands mates to raid farms and ranches for food.\n- Believes that by becoming the **largest giant**, the gods will elevate her kin.\n- Has spent months gorging herself; surrounding settlements suffer raids."
+  },
+  {
+    "id": "session-01-thane-kayalithica",
+    "title": "Chapter 1 — Thane Kayalithica",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1", "stone-giants"],
+    "body": "# Thane Kayalithica\n\n- Withdrawn **stone giant** leader, dwells in **Deadstone Cleft** in the Graypeak Mountains.\n- Believes small folk corrupted giant dreams by building on Ostoria’s ruins.\n- Seeks to scour settlements of humans, dwarves, and elves.\n- Her stone giants raid to destroy towns, then carve their deeds into canyon walls.\n- Convinced this will restore the “dream world” and impress the gods."
+  },
+  {
+    "id": "session-01-jarl-storvald",
+    "title": "Chapter 1 — Jarl Storvald",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1", "frost-giants"],
+    "body": "# Jarl Storvald\n\n- Fierce **frost giant** jarl who reclaimed **Svardborg** in the Sea of Moving Ice.\n- Holds white dragon eggs hostage, enslaving a mated pair of white dragons.\n- Rebuilt longships to launch raids and pillage supplies.\n- Obsessed with finding the **Ring of Winter** (aka the Ice That Never Melts).\n- Believes it will trigger the **Age of Everlasting Ice**.\n- Uses runes empowered by **Artus Cimber’s** blood, unknowingly leading to his descendants instead."
+  },
+  {
+    "id": "session-01-duke-zalto",
+    "title": "Chapter 1 — Duke Zalto",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1", "fire-giants"],
+    "body": "# Duke Zalto\n\n- Ambitious **fire giant** duke seeking to destroy dragons.\n- Plans to reforge the **Vonindod**, a dragon-slaying colossus.\n- Uses Ironslag, an ancient forge in the Ice Spires, but its heat is insufficient.\n- Seeks to capture **Maegera**, the fire primordial bound in **Gauntlgrym**, to fuel his forge.\n- Allies with drow of **House Xorlarrin** to infiltrate Gauntlgrym.\n- Goal: build unstoppable weapon to elevate fire giants above all others."
+  },
+  {
+    "id": "session-01-countess-sansuri",
+    "title": "Chapter 1 — Countess Sansuri",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1", "cloud-giants"],
+    "body": "# Countess Sansuri\n\n- Proud **cloud giant** noble and skilled wizard.\n- Dwells in her flying castle **Lyn Armaal**.\n- Searches for lost **Ostorian relics** and secrets of dragon magic.\n- Hopes to elevate cloud giants above storm giants.\n- Captured and tortures the bronze dragon **Felgolos** for information.\n- Believes lost dragon magic will cement her power and topple Serissa’s court."
+  },
+  {
     "id": "npc-harshnag-the-grim",
     "title": "Harshnag the Grim (NPC)",
     "type": "npc",
