@@ -60,7 +60,7 @@
   <!-- App Shell -->
   <div class="max-w-7xl mx-auto p-4 md:p-6">
     <header class="sticky flex items-center justify-between gap-3 mb-4 px-1 py-2 sticky">
-      <div class="w-full max-w-2xl">
+      <div class="w-full max-w-5xl">
         <div class="relative">
           <input id="search" type="search" placeholder="Search notes (⌘/Ctrl + K)" class="w-full rounded-xl border px-4 py-3 pr-10 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
           <span class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500">⌘K</span>
@@ -79,12 +79,18 @@
           <button data-filter="tag:spells" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Spells</button>
         </div>
       </div>
-      <nav class="flex items-center gap-2 text-sm">
-        <button id="btnExport" class="px-3 py-2 rounded-lg border bg-white hover:bg-slate-100 dark:bg-slate-900 dark:border-slate-700 dark:hover:bg-slate-800">Export JSON</button>
-        <label class="px-3 py-2 rounded-lg border bg-white hover:bg-slate-100 dark:bg-slate-900 dark:border-slate-700 dark:hover:bg-slate-800 cursor-pointer">
-          Import JSON <input id="fileImport" type="file" accept="application/json" class="hidden" />
-        </label>
-        <a id="btnPrint" class="px-3 py-2 rounded-lg border bg-white hover:bg-slate-100 dark:bg-slate-900 dark:border-slate-700 dark:hover:bg-slate-800" href="#" onclick="window.print()">Print</a>
+      <nav class="flex items-center gap-2 text-sm relative">
+        <div class="relative">
+          <button id="btnMore" aria-haspopup="true" aria-expanded="false" title="More"
+                  class="px-3 py-2 rounded-lg border bg-white hover:bg-slate-100 dark:bg-slate-900 dark:border-slate-700 dark:hover:bg-slate-800">⋯</button>
+          <div id="moreMenu" class="hidden absolute right-0 mt-2 w-44 card overflow-hidden">
+            <button id="btnExport" class="w-full text-left px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800">Export</button>
+            <label class="w-full block text-left px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer">
+              Import <input id="fileImport" type="file" accept="application/json" class="hidden" />
+            </label>
+            <button id="btnPrint" class="w-full text-left px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800">Print</button>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -224,6 +230,8 @@
     const elResultsCard = document.getElementById('resultsCard');
     const elQuickCard = document.getElementById('quickNotesCard');
     const elBtnClearSearch = document.getElementById('btnClearSearch');
+    const btnMore = document.getElementById('btnMore');
+    const moreMenu = document.getElementById('moreMenu');
 
     function typeBadge(t){
       const k = (t||'').toLowerCase();
@@ -392,6 +400,29 @@
       });
     }
 
+    // More menu (⋯) toggle
+    if (btnMore && moreMenu) {
+      btnMore.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = !moreMenu.classList.contains('hidden');
+        moreMenu.classList.toggle('hidden');
+        btnMore.setAttribute('aria-expanded', String(!isOpen));
+      });
+      // Click outside closes the menu
+      document.addEventListener('click', () => {
+        if (!moreMenu.classList.contains('hidden')) {
+          moreMenu.classList.add('hidden');
+          btnMore.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // Print action (moved from inline onclick)
+    const elBtnPrint = document.getElementById('btnPrint');
+    if (elBtnPrint) {
+      elBtnPrint.addEventListener('click', () => window.print());
+    }
+
     // Keyboard navigation
     document.addEventListener('keydown', (e) => {
       const cmdK = (e.key.toLowerCase() === 'k' && (e.metaKey || e.ctrlKey));
@@ -417,6 +448,11 @@
       // Escape key clears search even when input is not focused
       if (e.key === 'Escape') {
         e.preventDefault();
+        if (moreMenu && !moreMenu.classList.contains('hidden')) {
+          moreMenu.classList.add('hidden');
+          if (btnMore) btnMore.setAttribute('aria-expanded', 'false');
+          return;
+        }
         if (elSearch) { elSearch.value = ''; }
         state.q = '';
         state.activeIndex = 0;
