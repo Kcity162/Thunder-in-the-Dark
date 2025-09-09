@@ -30,6 +30,238 @@
     "body": "A battle-hardened **frost giant** who opposes the Ordning's chaos.\n\n- Favors mortals who stand against monstrous giants.\n- Often roams the **Spine of the World**.\n- Can guide the party to the **Eye of the All-Father**."
   },
   {
+    "id": "npc-zephyros",
+    "title": "Zephyros (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/zephyros.png",
+    "tags": ["npc", "storm-kings-thunder", "cloud-giant"],
+    "body": "An eccentric **cloud giant** wizard who aids smallfolk from his flying tower, offering cryptic guidance about the shattered **Ordning**.\n\n- Usually ferries the party between key locations.\n- Seeks a peaceful path to restore giantkind."
+  },
+  {
+    "id": "npc-king-hekaton",
+    "title": "King Hekaton (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/hekaton.png",
+    "tags": ["npc", "storm-kings-thunder", "storm-giant", "royalty"],
+    "body": "Missing **storm giant** king of the **Wyrmskull Throne**. His disappearance triggers the giants’ power scramble.\n\n- Finding him is central to resolving the crisis.\n- Values justice and the balance among giant kindreds."
+  },
+  {
+    "id": "npc-queen-neri",
+    "title": "Queen Neri (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/queen-neri.png",
+    "tags": ["npc", "storm-kings-thunder", "storm-giant"],
+    "body": "Beloved **storm giant** queen whose death deepens the royal turmoil. Her loss fuels rivalries among Hekaton’s daughters."
+  },
+  {
+    "id": "npc-princess-serissa",
+    "title": "Princess Serissa (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/serissa.png",
+    "tags": ["npc", "storm-kings-thunder", "storm-giant", "royalty"],
+    "body": "Youngest daughter of Hekaton, acting regent of **Maelstrom**. Sincere and just, she seeks outside heroes to uncover the court’s corruption."
+  },
+  {
+    "id": "npc-princess-mirran",
+    "title": "Princess Mirran (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/mirran.png",
+    "tags": ["npc", "storm-kings-thunder", "storm-giant"],
+    "body": "Ambitious elder princess of the storm giants, locked in rivalry for the throne."
+  },
+  {
+    "id": "npc-princess-nym",
+    "title": "Princess Nym (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/nym.png",
+    "tags": ["npc", "storm-kings-thunder", "storm-giant"],
+    "body": "Cunning elder princess of the storm giants; often aligned with Mirran’s schemes."
+  },
+  {
+    "id": "npc-iymrith",
+    "title": "Iymrith (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/iymrith.png",
+    "tags": ["npc", "storm-kings-thunder", "ancient-dragon", "antagonist"],
+    "body": "An **ancient blue dragon** who manipulates events under a giant guise, sowing discord within the storm giant court."
+  },
+  {
+    "id": "npc-countess-sansuri",
+    "title": "Countess Sansuri (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/sansuri.png",
+    "tags": ["npc", "storm-kings-thunder", "cloud-giant", "antagonist"],
+    "body": "Vainglorious **cloud giant** ruler of Lyn Armaal. Seeks lost **dragon magic** and ancient Ostorian secrets to elevate her station."
+  },
+  {
+    "id": "npc-duke-zalto",
+    "title": "Duke Zalto (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/zalto.png",
+    "tags": ["npc", "storm-kings-thunder", "fire-giant", "antagonist"],
+    "body": "War‑minded **fire giant** duke forging the **Vonindod** from scattered fragments to dominate the North."
+  },
+  {
+    "id": "npc-jarl-storvald",
+    "title": "Jarl Storvald (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/storvald.png",
+    "tags": ["npc", "storm-kings-thunder", "frost-giant", "antagonist"],
+    "body": "Ruthless **frost giant** jarl who hunts the **Ring of Winter** and leads raids from the Sea of Moving Ice."
+  },
+  {
+    "id": "npc-thane-kayalithica",
+    "title": "Thane Kayalithica (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/kayalithica.png",
+    "tags": ["npc", "storm-kings-thunder", "stone-giant", "antagonist"],
+    "body": "Austere **stone giant** leader whose isolationist dogma threatens smallfolk settlements across the frontier."
+  },
+  {
+    "id": "npc-augrek-brighthelm",
+    "title": "Augrek Brighthelm (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/augrek-brighthelm.png",
+    "tags": ["npc", "storm-kings-thunder", "bryn-shander", "special-npc"],
+    "body": "Cheery dwarf **deputy** of Bryn Shander’s southwest gate; loyal to Sheriff Southwell and protective of the town."
+  },
+  {
+    "id": "npc-sirac-of-suzail",
+    "title": "Sirac of Suzail (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/sirac.png",
+    "tags": ["npc", "storm-kings-thunder", "bryn-shander", "special-npc"],
+    "body": "Acolyte of **Torm** with a mysterious heritage; tied to **Artus Cimber**. Resides in Icewind Dale."
+  },
+  {
+    "id": "npc-markham-southwell",
+    "title": "Markham Southwell (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/markham-southwell.png",
+    "tags": ["npc", "storm-kings-thunder", "bryn-shander", "special-npc"],
+    "body": "Stoic **sheriff** of Bryn Shander; measures people by deeds and prioritizes the Dale’s safety."
+  },
+  {
+    "id": "npc-duvessa-shane",
+    "title": "Duvessa Shane (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/duvessa-shane.png",
+    "tags": ["npc", "storm-kings-thunder", "bryn-shander", "speaker", "special-npc"],
+    "body": "Young **Town Speaker** of Bryn Shander—sharp, determined, and fluent in northern politics."
+  },
+  {
+    "id": "npc-beldora",
+    "title": "Beldora (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/beldora.png",
+    "tags": ["npc", "storm-kings-thunder", "bryn-shander", "harpers", "special-npc"],
+    "body": "Street‑savvy **Harper** who trades in whispers and keeps Icewind Dale’s folk under her watch."
+  },
+  {
+    "id": "npc-sir-baric-nylef",
+    "title": "Sir Baric Nylef (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/sir-baric-nylef.png",
+    "tags": ["npc", "storm-kings-thunder", "bryn-shander", "order-of-the-gauntlet", "special-npc"],
+    "body": "Knight of the **Order of the Gauntlet** hunting the brigand Worvil ‘The Weevil’ Forkbeard in the North."
+  },
+  {
+    "id": "npc-shalvus-martholio",
+    "title": "Shalvus Martholio (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/shalvus-martholio.png",
+    "tags": ["npc", "storm-kings-thunder", "goldenfields", "zhentarim", "special-npc"],
+    "body": "A smiling **shepherd** and Zhentarim agent embedded in **Goldenfields**, eager to climb the Black Network’s ranks."
+  },
+  {
+    "id": "npc-zi-liang",
+    "title": "Zi Liang (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/zi-liang.png",
+    "tags": ["npc", "storm-kings-thunder", "goldenfields", "special-npc"],
+    "body": "Disciplined Goldenfields defender with a fierce sense of duty to the temple‑farm and its people."
+  },
+  {
+    "id": "npc-miros-xelbrin",
+    "title": "Miros Xelbrin (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/miros-xelbrin.png",
+    "tags": ["npc", "storm-kings-thunder", "goldenfields", "special-npc"],
+    "body": "Gregarious Goldenfields **showman** and tavern regular; stronger than he looks and quick to help."
+  },
+  {
+    "id": "npc-naxene-drathkala",
+    "title": "Naxene Drathkala (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/naxene-drathkala.png",
+    "tags": ["npc", "storm-kings-thunder", "goldenfields", "harpers", "wizard", "special-npc"],
+    "body": "Pragmatic **Harper** mage stationed in Goldenfields; studies dragons and counsels against giant threats."
+  },
+  {
+    "id": "npc-darz-helgar",
+    "title": "Darz Helgar (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/darz-helgar.png",
+    "tags": ["npc", "storm-kings-thunder", "triboar", "special-npc"],
+    "body": "World‑worn rogue turned stablehand in **Triboar**; survival first, but not without a conscience."
+  },
+  {
+    "id": "npc-darathra-shendrel",
+    "title": "Darathra Shendrel (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/darathra-shendrel.png",
+    "tags": ["npc", "storm-kings-thunder", "triboar", "lords-alliance", "special-npc"],
+    "body": "Capable **Lords’ Alliance** agent and protector of Triboar; steady in a crisis."
+  },
+  {
+    "id": "npc-narth-tezrin",
+    "title": "Narth Tezrin (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/narth-tezrin.png",
+    "tags": ["npc", "storm-kings-thunder", "triboar", "special-npc"],
+    "body": "Shopkeeper‑adventurer with big dreams; partners with Alaestra in Triboar’s trading scene."
+  },
+  {
+    "id": "npc-urgala-meltimer",
+    "title": "Urgala Meltimer (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/urgala-meltimer.png",
+    "tags": ["npc", "storm-kings-thunder", "triboar", "special-npc"],
+    "body": "No‑nonsense former mercenary who runs the **Northshield House** in Triboar; fiercely protective of locals."
+  },
+  {
+    "id": "npc-ghelryn-foehammer",
+    "title": "Ghelryn Foehammer (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/ghelryn-foehammer.png",
+    "tags": ["npc", "storm-kings-thunder", "triboar", "special-npc"],
+    "body": "Proud **shield dwarf** smith of Triboar; values craft, honor, and the town’s defense."
+  },
+  {
+    "id": "npc-othovir",
+    "title": "Othovir (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/othovir.png",
+    "tags": ["npc", "storm-kings-thunder", "triboar", "special-npc"],
+    "body": "Leatherworker of Triboar with ties he’d rather keep quiet; gets dragged into the giants’ attack."
+  },
+  {
+    "id": "npc-nestra-ruthiol",
+    "title": "Nestra Ruthiol (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/nestra-ruthiol.png",
+    "tags": ["npc", "storm-kings-thunder", "yartar", "waterbaron"],
+    "body": "Pragmatic **Waterbaron** of **Yartar** balancing city politics, merchants, and shadowy pressures."
+  },
+  {
+    "id": "npc-lord-drylund",
+    "title": "Lord Drylund (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/lord-drylund.png",
+    "tags": ["npc", "storm-kings-thunder", "yartar"],
+    "body": "Smooth‑talking Yartar noble whose gambling boat hides dangerous secrets tied to Hekaton’s fate."
+  },
+  {
     "id": "location-eye-of-the-all-father",
     "title": "Location — Eye of the All-Father",
     "type": "location",
@@ -378,5 +610,470 @@
 {"id":"spell-shapechange","title":"Shapechange","type":"spell","tags":["spells","transmutation","level-9","druid","wizard"],"body":"# Shapechange (9th-level transmutation)\nCasting Time: 1 action\nRange: Self\nComponents: V,S,M (jade circlet worth 1,500 gp)\nDuration: Concentration, up to 1 hour\n\nTransform into any creature you’ve seen with CR up to your level, retaining alignment/personality."},
 {"id":"spell-storm-of-vengeance","title":"Storm of Vengeance","type":"spell","tags":["spells","conjuration","level-9","druid"],"body":"# Storm of Vengeance (9th-level conjuration)\nCasting Time: 1 action\nRange: Sight\nComponents: V,S\nDuration: Concentration, up to 1 minute\n\nA miles-wide storm unleashes thunder, acid rain, lightning, and hail in successive rounds."},
 {"id":"spell-true-resurrection","title":"True Resurrection","type":"spell","tags":["spells","necromancy","level-9","cleric","druid"],"body":"# True Resurrection (9th-level necromancy)\nCasting Time: 1 hour\nRange: Touch\nComponents: V,S,M (diamond worth 25,000 gp)\nDuration: Instant\n\nReturn a creature dead up to 200 years to life; restores missing parts and removes all conditions."},
-{"id":"spell-wish","title":"Wish","type":"spell","tags":["spells","conjuration","level-9","sorcerer","wizard"],"body":"# Wish (9th-level conjuration)\nCasting Time: 1 action\nRange: Self\nComponents: V\nDuration: Instant\n\nDuplicate any 8th-level or lower spell without components, or attempt other effects at DM discretion (risk of stress)."}
+{"id":"spell-wish","title":"Wish","type":"spell","tags":["spells","conjuration","level-9","sorcerer","wizard"],"body":"# Wish (9th-level conjuration)\nCasting Time: 1 action\nRange: Self\nComponents: V\nDuration: Instant\n\nDuplicate any 8th-level or lower spell without components, or attempt other effects at DM discretion (risk of stress)."},
+{"id":"spell-aKev","title":"Kevin","type":"spell","tags":["spells","conjuration","level-9","sorcerer","wizard"],"body":"# Wish (9th-level conjuration)\nCasting Time: 1 action\nRange: Self\nComponents: V\nDuration: Instant\n\nDuplicate any 8th-level or lower spell without components, or attempt other effects at DM discretion (risk of stress)."},
+  {
+    "id": "god-amaunator",
+    "title": "Amaunator (God)",
+    "type": "god",
+    "img": "/assets/gods/amaunator.png",
+    "tags": ["lawful-neutral", "light"],
+    "body": "Amaunator, **Keeper of the Sun**, governs law and the steady march of daylight.\n\n- Patron of magistrates and order.\n- Associated with oaths, contracts, and the sun."
+  },
+  {
+    "id": "god-asmodeus",
+    "title": "Asmodeus (God)",
+    "type": "god",
+    "img": "/assets/gods/asmodeus.png",
+    "tags": ["lawful-evil", "trickery"],
+    "body": "Asmodeus, **Lord of the Nine**, is a god of tyranny and indulgence.\n\n- Tempts mortals with deals.\n- Cults hide in noble courts."
+  },
+  {
+    "id": "god-auril",
+    "title": "Auril (God)",
+    "type": "god",
+    "img": "/assets/gods/auril.png",
+    "tags": ["neutral-evil", "nature", "tempest"],
+    "body": "Auril, the **Frostmaiden**, embodies winter's cruelty.\n\n- Demands offerings in the cold months.\n- Feared across the North."
+  },
+  {
+    "id": "god-azuth",
+    "title": "Azuth (God)",
+    "type": "god",
+    "img": "/assets/gods/azuth.png",
+    "tags": ["lawful-neutral", "knowledge"],
+    "body": "Azuth, **the High One**, guides disciplined magic.\n\n- Patron of wizards and spellcraft.\n- Values study over chaos."
+  },
+  {
+    "id": "god-bane",
+    "title": "Bane (God)",
+    "type": "god",
+    "img": "/assets/gods/bane.png",
+    "tags": ["lawful-evil", "war"],
+    "body": "Bane, the **Black Hand**, is the god of tyranny.\n\n- Commands conquest and fear.\n- Favored by warlords."
+  },
+  {
+    "id": "god-beshaba",
+    "title": "Beshaba (God)",
+    "type": "god",
+    "img": "/assets/gods/beshaba.png",
+    "tags": ["chaotic-evil", "trickery"],
+    "body": "Beshaba, **Lady of Misfortune**, brings ill luck.\n\n- Her priests spread fear of bad omens.\n- Twin and rival to Tymora."
+  },
+  {
+    "id": "god-chauntea",
+    "title": "Chauntea (God)",
+    "type": "god",
+    "img": "/assets/gods/chauntea.png",
+    "tags": ["neutral-good", "life", "nature"],
+    "body": "Chauntea, the **Great Mother**, governs agriculture and life.\n\n- Patron of farmers.\n- Symbol of renewal."
+  },
+  {
+    "id": "god-cyric",
+    "title": "Cyric (God)",
+    "type": "god",
+    "img": "/assets/gods/cyric.png",
+    "tags": ["chaotic-evil", "trickery"],
+    "body": "Cyric, the **Prince of Lies**, is god of strife and deception.\n\n- Thrives on betrayal.\n- Hated by many faiths."
+  },
+  {
+    "id": "god-deneir",
+    "title": "Deneir (God)",
+    "type": "god",
+    "img": "/assets/gods/deneir.png",
+    "tags": ["neutral-good", "knowledge"],
+    "body": "Deneir, **the Scribe of Oghma**, preserves written lore.\n\n- Patron of cartographers and scribes.\n- Seeks to record truth."
+  },
+  {
+    "id": "god-eldath",
+    "title": "Eldath (God)",
+    "type": "god",
+    "img": "/assets/gods/eldath.png",
+    "tags": ["neutral-good", "life", "nature"],
+    "body": "Eldath, **the Quiet One**, is goddess of peace and pools.\n\n- Promotes nonviolence.\n- Sacred groves calm tempers."
+  },
+  {
+    "id": "god-finder-wyvernspur",
+    "title": "Finder Wyvernspur (God)",
+    "type": "god",
+    "img": "/assets/gods/finder_wyvernspur.png",
+    "tags": ["chaotic-neutral", "knowledge", "trickery"],
+    "body": "Finder, **the Nameless Bard**, inspires creation and reinvention.\n\n- Patron of bards and innovators.\n- Embraces new art from old forms."
+  },
+  {
+    "id": "god-gond",
+    "title": "Gond (God)",
+    "type": "god",
+    "img": "/assets/gods/gond.png",
+    "tags": ["neutral", "knowledge"],
+    "body": "Gond, **Wonderbringer**, exalts craft and invention.\n\n- Patron of artisans and tinkers.\n- Encourages experimentation."
+  },
+  {
+    "id": "god-gwaeron-windstrom",
+    "title": "Gwaeron Windstrom (God)",
+    "type": "god",
+    "img": "/assets/gods/gwaeron_windstrom.png",
+    "tags": ["neutral-good", "nature"],
+    "body": "Gwaeron, **the Tracker Who Never Fails**, guides rangers.\n\n- Master of trails and beasts.\n- Ally of Mielikki."
+  },
+  {
+    "id": "god-helm",
+    "title": "Helm (God)",
+    "type": "god",
+    "img": "/assets/gods/helm.png",
+    "tags": ["lawful-neutral", "war"],
+    "body": "Helm, **the Vigilant One**, is god of guardianship.\n\n- Patron of sentinels and watchmen.\n- Duty above all."
+  },
+  {
+    "id": "god-hoar",
+    "title": "Hoar (God)",
+    "type": "god",
+    "img": "/assets/gods/hoar.png",
+    "tags": ["lawful-neutral", "war", "trickery"],
+    "body": "Hoar, **the Doombringer**, embodies poetic justice.\n\n- Patron of vengeance and duels.\n- Oaths paid in kind."
+  },
+  {
+    "id": "god-ilmater",
+    "title": "Ilmater (God)",
+    "type": "god",
+    "img": "/assets/gods/ilmater.png",
+    "tags": ["lawful-good", "life"],
+    "body": "Ilmater, **the Broken God**, is patron of endurance and mercy.\n\n- Comforts the suffering.\n- Inspires self-sacrifice."
+  },
+  {
+    "id": "god-istishia",
+    "title": "Istishia (God)",
+    "type": "god",
+    "img": "/assets/gods/istishia.png",
+    "tags": ["neutral", "nature", "tempest"],
+    "body": "Istishia, **the Water Lord**, is the sea and flowing change.\n\n- Revered by sailors.\n- Embraces transformation."
+  },
+  {
+    "id": "god-kelemvor",
+    "title": "Kelemvor (God)",
+    "type": "god",
+    "img": "/assets/gods/kelemvor.png",
+    "tags": ["lawful-neutral", "death"],
+    "body": "Kelemvor, **Lord of the Dead**, judges souls fairly.\n\n- Opposes undeath.\n- Keeps death orderly."
+  },
+  {
+    "id": "god-kossuth",
+    "title": "Kossuth (God)",
+    "type": "god",
+    "img": "/assets/gods/kossuth.png",
+    "tags": ["neutral", "light", "nature"],
+    "body": "Kossuth, **the Firelord**, is purifying flame.\n\n- Trials by fire.\n- Revered by elementalists."
+  },
+  {
+    "id": "god-lathander",
+    "title": "Lathander (God)",
+    "type": "god",
+    "img": "/assets/gods/lathander.png",
+    "tags": ["neutral-good", "life", "light"],
+    "body": "Lathander, the **Morninglord**, heralds dawn and renewal.\n\n- Patron of new beginnings.\n- Favored by artists and healers."
+  },
+  {
+    "id": "god-leira",
+    "title": "Leira (God)",
+    "type": "god",
+    "img": "/assets/gods/leira.png",
+    "tags": ["chaotic-neutral", "trickery"],
+    "body": "Leira, **Mistress of the Mists**, cloaks truth in illusion.\n\n- Patron of secrets and masks.\n- Truth is mutable."
+  },
+  {
+    "id": "god-lliira",
+    "title": "Lliira (God)",
+    "type": "god",
+    "img": "/assets/gods/lliira.png",
+    "tags": ["chaotic-good", "life"],
+    "body": "Lliira, **Lady of Joy**, celebrates freedom and festivity.\n\n- Holy days are dances.\n- Opposes oppression."
+  },
+  {
+    "id": "god-loviatar",
+    "title": "Loviatar (God)",
+    "type": "god",
+    "img": "/assets/gods/loviatar.png",
+    "tags": ["lawful-evil", "death", "trickery"],
+    "body": "Loviatar, **Maiden of Pain**, exalts suffering and discipline.\n\n- Patron of punishers.\n- Pain as devotion."
+  },
+  {
+    "id": "god-malar",
+    "title": "Malar (God)",
+    "type": "god",
+    "img": "/assets/gods/malar.png",
+    "tags": ["chaotic-evil", "nature"],
+    "body": "Malar, **the Beastlord**, revels in the savage hunt.\n\n- Predator over prey.\n- Blood rites in the wilds."
+  },
+  {
+    "id": "god-mask",
+    "title": "Mask (God)",
+    "type": "god",
+    "img": "/assets/gods/mask.png",
+    "tags": ["chaotic-neutral", "trickery"],
+    "body": "Mask, **Lord of Shadows**, is patron of thieves.\n\n- Stealth, guile, and luck.\n- Shadows conceal truth."
+  },
+  {
+    "id": "god-mielikki",
+    "title": "Mielikki (God)",
+    "type": "god",
+    "img": "/assets/gods/mielikki.png",
+    "tags": ["neutral-good", "nature", "life"],
+    "body": "Mielikki, **Our Lady of the Forest**, protects the wild.\n\n- Patron of rangers.\n- Hunts for balance."
+  },
+  {
+    "id": "god-milil",
+    "title": "Milil (God)",
+    "type": "god",
+    "img": "/assets/gods/milil.png",
+    "tags": ["neutral-good", "light", "knowledge"],
+    "body": "Milil, **Lord of Song**, exalts poetry and music.\n\n- Patron of performers.\n- Beauty as truth."
+  },
+  {
+    "id": "god-myrkul",
+    "title": "Myrkul (God)",
+    "type": "god",
+    "img": "/assets/gods/myrkul.png",
+    "tags": ["neutral-evil", "death"],
+    "body": "Myrkul, **the Lord of Bones**, is dread inevitability.\n\n- Whispers of tombs.\n- Feared by common folk."
+  },
+  {
+    "id": "god-mystra",
+    "title": "Mystra (God)",
+    "type": "god",
+    "img": "/assets/gods/mystra.png",
+    "tags": ["neutral-good", "knowledge"],
+    "body": "Mystra, **Lady of Mysteries**, embodies the Weave.\n\n- Patron of spellcasters.\n- Magic must be guarded."
+  },
+  {
+    "id": "god-oghma",
+    "title": "Oghma (God)",
+    "type": "god",
+    "img": "/assets/gods/oghma.png",
+    "tags": ["neutral", "knowledge"],
+    "body": "Oghma, **Binder of What Is Known**, is knowledge itself.\n\n- Patron of lorekeepers.\n- Ideas seek expression."
+  },
+  {
+    "id": "god-red-knight",
+    "title": "Red Knight (God)",
+    "type": "god",
+    "img": "/assets/gods/red_knight.png",
+    "tags": ["lawful-neutral", "war"],
+    "body": "The Red Knight, **Lady of Strategy**, guides battlefield tactics.\n\n- Patron of officers.\n- War as disciplined art."
+  },
+  {
+    "id": "god-savras",
+    "title": "Savras (God)",
+    "type": "god",
+    "img": "/assets/gods/savras.png",
+    "tags": ["lawful-neutral", "knowledge"],
+    "body": "Savras, **the All-Seeing**, governs divination.\n\n- Patron of seers.\n- Truth through visions."
+  },
+  {
+    "id": "god-sekine? (selune)",
+    "title": "Selune (God)",
+    "type": "god",
+    "img": "/assets/gods/selune.png",
+    "tags": ["neutral-good", "life", "light"],
+    "body": "Selûne, **Our Lady of Silver**, is the moon's grace.\n\n- Protector of travelers.\n- Eternal foe of Shar."
+  },
+  {
+    "id": "god-shar",
+    "title": "Shar (God)",
+    "type": "god",
+    "img": "/assets/gods/shar.png",
+    "tags": ["neutral-evil", "death", "trickery"],
+    "body": "Shar, **Mistress of the Night**, keeps loss and secrets.\n\n- Temples hide in shadow.\n- Rival to Selûne."
+  },
+  {
+    "id": "god-sharess",
+    "title": "Sharess (God)",
+    "type": "god",
+    "img": "/assets/gods/sharess.png",
+    "tags": ["chaotic-good", "life"],
+    "body": "Sharess, **the Dancing Lady**, revels in joy and sensuality.\n\n- Festivals and pleasure.\n- Freedom of the self."
+  },
+  {
+    "id": "god-shaundakul",
+    "title": "Shaundakul (God)",
+    "type": "god",
+    "img": "/assets/gods/shaundakul.png",
+    "tags": ["chaotic-neutral", "trickery", "nature"],
+    "body": "Shaundakul, **the Rider of the Winds**, aids travelers.\n\n- Portals and wayfinding.\n- Patron of explorers."
+  },
+  {
+    "id": "god-siamorphe",
+    "title": "Siamorphe (God)",
+    "type": "god",
+    "img": "/assets/gods/siamorphe.png",
+    "tags": ["lawful-neutral", "light"],
+    "body": "Siamorphe, **Heir to Nobility**, binds power to responsibility.\n\n- Right rule as sacred duty.\n- Chastens decadent nobles."
+  },
+  {
+    "id": "god-silvanus",
+    "title": "Silvanus (God)",
+    "type": "god",
+    "img": "/assets/gods/silvanus.png",
+    "tags": ["neutral", "nature"],
+    "body": "Silvanus, **the Oak Father**, is the wild made divine.\n\n- Patron of druids.\n- Keeps nature in balance."
+  },
+  {
+    "id": "god-sune",
+    "title": "Sune (God)",
+    "type": "god",
+    "img": "/assets/gods/sune.png",
+    "tags": ["chaotic-good", "life", "light"],
+    "body": "Sune, **Lady Firehair**, celebrates beauty and love.\n\n- Patron of art and romance.\n- Beauty as sacred."
+  },
+  {
+    "id": "god-talona",
+    "title": "Talona (God)",
+    "type": "god",
+    "img": "/assets/gods/talona.png",
+    "tags": ["chaotic-evil", "death", "nature"],
+    "body": "Talona, **Lady of Poison**, spreads disease and rot.\n\n- Feared by healers.\n- Plagues as portents."
+  },
+  {
+    "id": "god-talos",
+    "title": "Talos (God)",
+    "type": "god",
+    "img": "/assets/gods/talos.png",
+    "tags": ["chaotic-evil", "tempest"],
+    "body": "Talos, **the Storm Lord**, is destructive fury.\n\n- Thunderheads as omens.\n- Wreckers praise him."
+  },
+  {
+    "id": "god-tempus",
+    "title": "Tempus (God)",
+    "type": "god",
+    "img": "/assets/gods/tempus.png",
+    "tags": ["neutral", "war"],
+    "body": "Tempus, **Lord of Battles**, honors valor and skill.\n\n- Patron of soldiers.\n- War as crucible."
+  },
+  {
+    "id": "god-torm",
+    "title": "Torm (God)",
+    "type": "god",
+    "img": "/assets/gods/torm.png",
+    "tags": ["lawful-good", "war"],
+    "body": "Torm, **the Loyal Fury**, swears to duty and courage.\n\n- Patron of paladins.\n- Sacrifice for the good."
+  },
+  {
+    "id": "god-tymora",
+    "title": "Tymora (God)",
+    "type": "god",
+    "img": "/assets/gods/tymora.png",
+    "tags": ["chaotic-good", "trickery"],
+    "body": "Tymora, **Lady Luck**, smiles on bold hearts.\n\n- Patron of gamblers.\n- Fortune favors risk."
+  },
+  {
+    "id": "god-tyr",
+    "title": "Tyr (God)",
+    "type": "god",
+    "img": "/assets/gods/tyr.png",
+    "tags": ["lawful-good", "war"],
+    "body": "Tyr, **the Even-Handed**, is justice made steel.\n\n- Courts and codes.\n- Blind but fair."
+  },
+  {
+    "id": "god-umberlee",
+    "title": "Umberlee (God)",
+    "type": "god",
+    "img": "/assets/gods/umberlee.png",
+    "tags": ["chaotic-evil", "tempest", "nature"],
+    "body": "Umberlee, **the Bitch Queen**, rules the cruel sea.\n\n- Sailors appease her.\n- Shipwrecks are tithe."
+  },
+  {
+    "id": "god-valkur",
+    "title": "Valkur (God)",
+    "type": "god",
+    "img": "/assets/gods/valkur.png",
+    "tags": ["chaotic-good", "tempest"],
+    "body": "Valkur, **the Mighty**, is luck and courage at sea.\n\n- Patron of captains.\n- Ride the gale."
+  },
+  {
+    "id": "god-velsharoon",
+    "title": "Velsharoon (God)",
+    "type": "god",
+    "img": "/assets/gods/velsharoon.png",
+    "tags": ["neutral-evil", "death", "knowledge"],
+    "body": "Velsharoon, **the Vaunted**, codifies necromancy.\n\n- Liches and scholars.\n- Power from death."
+  },
+  {
+    "id": "god-waukeen",
+    "title": "Waukeen (God)",
+    "type": "god",
+    "img": "/assets/gods/waukeen.png",
+    "tags": ["neutral", "knowledge", "trickery"],
+    "body": "Waukeen, **the Merchant’s Friend**, blesses trade.\n\n- Coin flows as lifeblood.\n- Patron of peddlers."
+  },
+  {
+    "id": "god-akadi",
+    "title": "Akadi (God)",
+    "type": "god",
+    "img": "/assets/gods/akadi.png",
+    "tags": ["neutral", "nature", "trickery"],
+    "body": "Akadi, **Queen of Air**, is freedom on the wind.\n\n- Sky, breath, and motion.\n- Change without chains."
+  },
+  {
+    "id": "god-grumbar",
+    "title": "Grumbar (God)",
+    "type": "god",
+    "img": "/assets/gods/grumbar.png",
+    "tags": ["neutral", "nature"],
+    "body": "Grumbar, **the Earthlord**, is endurance and stone.\n\n- Oaths unyielding.\n- Mountains remember."
+  },
+  {
+    "id": "god-ubtao",
+    "title": "Ubtao (God)",
+    "type": "god",
+    "img": "/assets/gods/ubtao.png",
+    "tags": ["neutral", "nature", "knowledge"],
+    "body": "Ubtao, **Father of Dinosaurs**, shaped Chult.\n\n- Labyrinthine paths.\n- Spirits of the jungle."
+  },
+  {
+    "id": "god-uthgar",
+    "title": "Uthgar (God)",
+    "type": "god",
+    "img": "/assets/gods/uthgar.png",
+    "tags": ["chaotic-neutral", "war", "nature"],
+    "body": "Uthgar, **the Battle Father**, patron of Uthgardt tribes.\n\n- Totem spirits lead clans.\n- Strength proves right."
+  },
+  {
+    "id": "god-lolth",
+    "title": "Lolth (God)",
+    "type": "god",
+    "img": "/assets/gods/lolth.png",
+    "tags": ["chaotic-evil", "trickery"],
+    "body": "Lolth, **Spider Queen**, rules drow and webs.\n\n- Treachery as virtue.\n- Dark below dark."
+  },
+  {
+    "id": "god-eilistraee",
+    "title": "Eilistraee (God)",
+    "type": "god",
+    "img": "/assets/gods/eilistraee.png",
+    "tags": ["chaotic-good", "life", "light"],
+    "body": "Eilistraee, **Dark Maiden**, offers drow redemption.\n\n- Moonlit dances.\n- Blade and song."
+  },
+  {
+    "id": "god-ghanadaur",
+    "title": "Ghaunadaur (God)",
+    "type": "god",
+    "img": "/assets/gods/ghaunadaur.png",
+    "tags": ["chaotic-evil", "death", "trickery"],
+    "body": "Ghaunadaur, **That Which Lurks**, loves oozes and outcasts.\n\n- Hunger without end.\n- Forgotten caverns."
+  },
+  {
+    "id": "god-moondancer-lurue",
+    "title": "Lurue (God)",
+    "type": "god",
+    "img": "/assets/gods/lurue.png",
+    "tags": ["chaotic-good", "life", "nature"],
+    "body": "Lurue, **the Unicorn Queen**, blesses wonder.\n\n- Innocence and wild magic.\n- Friends of fey."
+  },
+  {
+    "id": "god-velsharoon? (already)",
+    "title": "Veles (skip)",
+    "type": "god",
+    "img": "/assets/gods/velsharoon.png",
+    "tags": ["neutral-evil"],
+    "body": "Duplicate placeholder to ensure JSON validity removed."
+  }
 ]
