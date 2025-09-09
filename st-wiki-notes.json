@@ -1,0 +1,164 @@
+[
+  {
+    "id": "session-this-is-a-note",
+    "title": "This is a note",
+    "type": "session",
+    "tags": [],
+    "body": "# This is a note\n\nWrite your content here..."
+  },
+  {
+    "id": "session-01-meeting-in-bryn-shander",
+    "title": "Session 01 — Trouble in Bryn Shander",
+    "type": "session",
+    "tags": [
+      "sessions",
+      "bryn-shander",
+      "ten-towns"
+    ],
+    "body": "# Recap\n\nThe party arrived in **Bryn Shander** during heavy snow. Rumors mentioned giants harassing the Ten-Towns.\n\n### Key Events\n- Met Sheriff *Markham Southwell* and Speaker *Duvessa Shane*.\n- A frost giant scouting party searched for *Artus Cimber*.\n- Party defended the walls; townsfolk thankful.\n\n### Hooks\n- Follow leads on **Artus Cimber**.\n- Seek out the wandering giant ally **Harshnag**."
+  },
+  {
+    "id": "npc-harshnag-the-grim",
+    "title": "Harshnag the Grim (NPC)",
+    "type": "npc",
+    "img": "/assets/npcs/harshnag.png",
+    "tags": [
+      "giants",
+      "ally",
+      "frost-giant"
+    ],
+    "body": "A battle-hardened **frost giant** who opposes the Ordning's chaos.\n\n- Favors mortals who stand against monstrous giants.\n- Often roams the **Spine of the World**.\n- Can guide the party to the **Eye of the All-Father**."
+  },
+  {
+    "id": "location-eye-of-the-all-father",
+    "title": "Location — Eye of the All-Father",
+    "type": "location",
+    "tags": [
+      "temple",
+      "ancient",
+      "spine-of-the-world"
+    ],
+    "body": "Ancient giant temple hidden in the mountains.\n\n- Houses the oracle of **Annam**.\n- Answers questions when proper rites are observed.\n- Crucial to understanding the **Ordning** upheaval."
+  },
+  {
+    "id": "rule-house-critical-hits",
+    "title": "House Rule — Critical Hits",
+    "type": "rule",
+    "tags": [
+      "rules",
+      "combat"
+    ],
+    "body": "**Crits:** Roll damage dice twice (`2d`) + modifiers once. Brutal Critical features add extra dice after doubling."
+  },
+  {
+    "id": "faction-harpers",
+    "title": "Faction — Harpers",
+    "type": "faction",
+    "tags": [
+      "faction",
+      "harpers",
+      "allies"
+    ],
+    "body": "A semi-secret network promoting equality and opposing tyranny. Potential patrons or quest-givers in the North."
+  },
+  {
+    "id": "notice-srd-cc-by",
+    "title": "SRD 5.1 Attribution",
+    "type": "rule",
+    "tags": ["meta"],
+    "body": "Select spell summaries are adapted from the D&D 5.1 System Reference Document, released under Creative Commons CC BY 4.0 by Wizards of the Coast."
+  },
+  {
+    "id": "spell-acid-splash",
+    "title": "Acid Splash",
+    "type": "spell",
+    "tags": ["spells", "conjuration", "cantrip"],
+    "body": "# Acid Splash (Conjuration cantrip)\nCasting Time: 1 action\nRange: 60 ft\nComponents: V,S\nDuration: Instant\n\nDex save by one or two creatures within 5 ft of each other; a target takes 1d6 acid damage (scales with level)."
+  },
+  {
+    "id": "spell-mage-hand",
+    "title": "Mage Hand",
+    "type": "spell",
+    "tags": ["spells", "conjuration", "cantrip"],
+    "body": "# Mage Hand (Conjuration cantrip)\nCasting Time: 1 action\nRange: 30 ft\nComponents: V,S\nDuration: 1 minute\n\nCreate a spectral hand to manipulate objects (up to 10 lb). Can't attack, activate magic items, or carry more than 10 lb."
+  },
+  {
+    "id": "spell-guidance",
+    "title": "Guidance",
+    "type": "spell",
+    "tags": ["spells", "divination", "cantrip", "cleric", "druid"],
+    "body": "# Guidance (Divination cantrip)\nCasting Time: 1 action\nRange: Touch\nComponents: V,S\nDuration: Concentration, up to 1 minute\n\nTouch a willing creature; once before the spell ends, the target can add 1d4 to one ability check."
+  },
+  {
+    "id": "spell-prestidigitation",
+    "title": "Prestidigitation",
+    "type": "spell",
+    "tags": ["spells", "transmutation", "cantrip", "wizard", "sorcerer", "bard"],
+    "body": "# Prestidigitation (Transmutation cantrip)\nCasting Time: 1 action\nRange: 10 ft\nComponents: V,S\nDuration: Up to 1 hour\n\nPerform minor magical effects: clean/soil, flavor, light/snuff a small flame, create a trinket, etc."
+  },
+  {
+    "id": "spell-shield",
+    "title": "Shield",
+    "type": "spell",
+    "tags": ["spells", "abjuration", "level-1", "wizard", "sorcerer"],
+    "body": "# Shield (1st-level abjuration)\nCasting Time: 1 reaction (when hit or targeted by Magic Missile)\nRange: Self\nComponents: V,S\nDuration: 1 round\n\nAn invisible barrier gives +5 AC until start of your next turn; you also take no damage from Magic Missile."
+  },
+  {
+    "id": "spell-cure-wounds",
+    "title": "Cure Wounds",
+    "type": "spell",
+    "tags": ["spells", "evocation", "level-1", "cleric", "bard", "druid", "paladin", "ranger", "artificer"],
+    "body": "# Cure Wounds (1st-level evocation)\nCasting Time: 1 action\nRange: Touch\nComponents: V,S\nDuration: Instant\n\nA creature you touch regains 1d8 + your spellcasting modifier HP (more when cast at higher levels)."
+  },
+  {
+    "id": "spell-bless",
+    "title": "Bless",
+    "type": "spell",
+    "tags": ["spells", "enchantment", "level-1", "cleric", "paladin"],
+    "body": "# Bless (1st-level enchantment)\nCasting Time: 1 action\nRange: 30 ft\nComponents: V,S,M (pinch of holy water)\nDuration: Concentration, up to 1 minute\n\nUp to three creatures gain +1d4 to attack rolls and saving throws (more targets when cast at higher levels)."
+  },
+  {
+    "id": "spell-misty-step",
+    "title": "Misty Step",
+    "type": "spell",
+    "tags": ["spells", "conjuration", "level-2", "bonus-action", "wizard", "sorcerer", "warlock", "bard"],
+    "body": "# Misty Step (2nd-level conjuration)\nCasting Time: 1 bonus action\nRange: Self\nComponents: V\nDuration: Instant\n\nBriefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space you can see."
+  },
+  {
+    "id": "spell-fireball",
+    "title": "Fireball",
+    "type": "spell",
+    "tags": ["spells", "evocation", "level-3", "wizard", "sorcerer"],
+    "body": "# Fireball (3rd-level evocation)\nCasting Time: 1 action\nRange: 150 ft\nComponents: V,S,M (a tiny ball of bat guano and sulfur)\nDuration: Instant\n\nA 20-foot-radius explosion deals 8d6 fire damage (Dex save for half). Damage increases by 1d6 per slot above 3rd."
+  },
+  {
+    "id": "spell-counterspell",
+    "title": "Counterspell",
+    "type": "spell",
+    "tags": ["spells", "abjuration", "level-3", "reaction", "wizard", "sorcerer", "warlock", "bard"],
+    "body": "# Counterspell (3rd-level abjuration)\nCasting Time: 1 reaction (when a creature within 60 ft casts a spell)\nRange: 60 ft\nComponents: S\nDuration: Instant\n\nInterrupt a creature in the process of casting. If the spell is 3rd level or lower, it fails; otherwise make an ability check."
+  },
+  {"id":"spell-blade-ward","title":"Blade Ward","type":"spell","tags":["spells","abjuration","cantrip","bard","sorcerer","warlock","wizard"],"body":"# Blade Ward (Abjuration cantrip)\nCasting Time: 1 action\nRange: Self\nComponents: V,S\nDuration: 1 round\n\nYou have resistance to bludgeoning, piercing, and slashing damage from weapon attacks until the end of your next turn."},
+  {"id":"spell-chill-touch","title":"Chill Touch","type":"spell","tags":["spells","necromancy","cantrip","sorcerer","warlock","wizard"],"body":"# Chill Touch (Necromancy cantrip)\nCasting Time: 1 action\nRange: 120 ft\nComponents: V,S\nDuration: 1 round\n\nRanged spell attack; 1d8 necrotic damage and no healing; target is a ghostly skeletal hand clinging to it until your next turn (undead have disadvantage on attack rolls against you)."},
+  {"id":"spell-dancing-lights","title":"Dancing Lights","type":"spell","tags":["spells","evocation","cantrip","bard","sorcerer","wizard"],"body":"# Dancing Lights (Evocation cantrip)\nCasting Time: 1 action\nRange: 120 ft\nComponents: V,S,M (phosphorus, wychwood, or glowworm)\nDuration: Concentration, up to 1 minute\n\nCreate up to four torch-sized lights that shed dim light; they can move and combine into a glowing humanoid form."},
+  {"id":"spell-druidcraft","title":"Druidcraft","type":"spell","tags":["spells","transmutation","cantrip","druid"],"body":"# Druidcraft (Transmutation cantrip)\nCasting Time: 1 action\nRange: 30 ft\nComponents: V,S\nDuration: Instant or up to 1 minute\n\nWhispering to nature produces minor effects: predict weather, create sensory effects, light/snuff a candle, or cause a flower to bloom."},
+  {"id":"spell-eldritch-blast","title":"Eldritch Blast","type":"spell","tags":["spells","evocation","cantrip","warlock"],"body":"# Eldritch Blast (Evocation cantrip)\nCasting Time: 1 action\nRange: 120 ft\nComponents: V,S\nDuration: Instant\n\nMake a ranged spell attack for 1d10 force damage. Beams increase with level and can target the same or different creatures."},
+  {"id":"spell-fire-bolt","title":"Fire Bolt","type":"spell","tags":["spells","evocation","cantrip","sorcerer","wizard"],"body":"# Fire Bolt (Evocation cantrip)\nCasting Time: 1 action\nRange: 120 ft\nComponents: V,S\nDuration: Instant\n\nRanged spell attack; 1d10 fire damage; ignites flammable unattended objects."},
+  {"id":"spell-friends","title":"Friends","type":"spell","tags":["spells","enchantment","cantrip","bard","sorcerer","warlock","wizard"],"body":"# Friends (Enchantment cantrip)\nCasting Time: 1 action\nRange: Self\nComponents: S,M (cosmetics)\nDuration: Concentration, up to 1 minute\n\nYou gain advantage on Charisma checks directed at one non-hostile creature. Afterward, it realizes you used magic and may become hostile."},
+  {"id":"spell-light","title":"Light","type":"spell","tags":["spells","evocation","cantrip","bard","cleric","sorcerer","wizard"],"body":"# Light (Evocation cantrip)\nCasting Time: 1 action\nRange: Touch\nComponents: V,M (firefly or phosphorescent moss)\nDuration: 1 hour\n\nObject sheds bright light in a 20‑ft radius (dim light +20 ft). If object is worn/carried, save negates."},
+  {"id":"spell-mending","title":"Mending","type":"spell","tags":["spells","transmutation","cantrip","bard","cleric","druid","sorcerer","wizard"],"body":"# Mending (Transmutation cantrip)\nCasting Time: 1 minute\nRange: Touch\nComponents: V,S,M (two lodestones)\nDuration: Instant\n\nRepairs a break or tear in an object (no larger than 1 foot in any dimension)."},
+  {"id":"spell-message","title":"Message","type":"spell","tags":["spells","transmutation","cantrip","bard","sorcerer","wizard"],"body":"# Message (Transmutation cantrip)\nCasting Time: 1 action\nRange: 120 ft\nComponents: V,S,M (copper wire)\nDuration: 1 round\n\nPoint at a creature and whisper a message; it can reply in a whisper only you can hear."},
+  {"id":"spell-minor-illusion","title":"Minor Illusion","type":"spell","tags":["spells","illusion","cantrip","bard","sorcerer","warlock","wizard"],"body":"# Minor Illusion (Illusion cantrip)\nCasting Time: 1 action\nRange: 30 ft\nComponents: S,M (fleece)\nDuration: 1 minute\n\nCreate a sound or an image of an object (5‑ft cube). Investigation check can reveal the illusion."},
+  {"id":"spell-poison-spray","title":"Poison Spray","type":"spell","tags":["spells","conjuration","cantrip","druid","sorcerer","warlock","wizard"],"body":"# Poison Spray (Conjuration cantrip)\nCasting Time: 1 action\nRange: 10 ft\nComponents: V,S\nDuration: Instant\n\nTarget makes a Con save or takes 1d12 poison damage."},
+  {"id":"spell-produce-flame","title":"Produce Flame","type":"spell","tags":["spells","conjuration","cantrip","druid"],"body":"# Produce Flame (Conjuration cantrip)\nCasting Time: 1 action\nRange: Self\nComponents: V,S\nDuration: 10 minutes\n\nA flame appears in your hand, shedding bright/dim light. You can hurl it as a ranged spell attack (1d8 fire)."},
+  {"id":"spell-ray-of-frost","title":"Ray of Frost","type":"spell","tags":["spells","evocation","cantrip","sorcerer","wizard"],"body":"# Ray of Frost (Evocation cantrip)\nCasting Time: 1 action\nRange: 60 ft\nComponents: V,S\nDuration: Instant\n\nRanged spell attack; 1d8 cold damage and target’s speed is reduced by 10 ft until your next turn."},
+  {"id":"spell-resistance","title":"Resistance","type":"spell","tags":["spells","abjuration","cantrip","cleric","druid"],"body":"# Resistance (Abjuration cantrip)\nCasting Time: 1 action\nRange: Touch\nComponents: V,S,M (miniature cloak)\nDuration: Concentration, up to 1 minute\n\nTouch a willing creature; once before the spell ends, the target can add 1d4 to one saving throw."},
+  {"id":"spell-sacred-flame","title":"Sacred Flame","type":"spell","tags":["spells","evocation","cantrip","cleric"],"body":"# Sacred Flame (Evocation cantrip)\nCasting Time: 1 action\nRange: 60 ft\nComponents: V,S\nDuration: Instant\n\nTarget makes a Dex save or takes 1d8 radiant damage; target gains no cover bonus from the save."},
+  {"id":"spell-shillelagh","title":"Shillelagh","type":"spell","tags":["spells","transmutation","cantrip","druid"],"body":"# Shillelagh (Transmutation cantrip)\nCasting Time: 1 bonus action\nRange: Touch\nComponents: V,S,M (mistletoe, shamrock leaf, club/quaterstaff)\nDuration: 1 minute\n\nImbue a club or quarterstaff; it uses your spellcasting ability for attack/damage and deals 1d8 damage. Weapon becomes magical."},
+  {"id":"spell-shocking-grasp","title":"Shocking Grasp","type":"spell","tags":["spells","evocation","cantrip","sorcerer","wizard"],"body":"# Shocking Grasp (Evocation cantrip)\nCasting Time: 1 action\nRange: Touch\nComponents: V,S\nDuration: Instant\n\nMelee spell attack; 1d8 lightning damage and target can’t take reactions until the start of its next turn (advantage if target wears metal armor)."},
+  {"id":"spell-spare-the-dying","title":"Spare the Dying","type":"spell","tags":["spells","necromancy","cantrip","cleric"],"body":"# Spare the Dying (Necromancy cantrip)\nCasting Time: 1 action\nRange: Touch\nComponents: V,S\nDuration: Instant\n\nStabilize a creature at 0 HP; the target becomes stable."},
+  {"id":"spell-thaumaturgy","title":"Thaumaturgy","type":"spell","tags":["spells","transmutation","cantrip","cleric"],"body":"# Thaumaturgy (Transmutation cantrip)\nCasting Time: 1 action\nRange: 30 ft\nComponents: V\nDuration: Up to 1 minute\n\nManifest minor wonders: booming voice, flickering flames, tremors, doors fly open, etc."},
+  {"id":"spell-thorn-whip","title":"Thorn Whip","type":"spell","tags":["spells","transmutation","cantrip","druid"],"body":"# Thorn Whip (Transmutation cantrip)\nCasting Time: 1 action\nRange: 30 ft\nComponents: V,S,M (plant stem with thorns)\nDuration: Instant\n\nMelee spell attack at range; 1d6 piercing damage and pull the creature up to 10 ft closer to you if it’s Large or smaller."},
+  {"id":"spell-true-strike","title":"True Strike","type":"spell","tags":["spells","divination","cantrip","bard","sorcerer","warlock","wizard"],"body":"# True Strike (Divination cantrip)\nCasting Time: 1 action\nRange: 30 ft\nComponents: S\nDuration: Concentration, up to 1 round\n\nOn your next turn, you gain advantage on your first attack roll against the target (assuming the spell hasn’t ended)."},
+  {"id":"spell-vicious-mockery","title":"Vicious Mockery","type":"spell","tags":["spells","enchantment","cantrip","bard"],"body":"# Vicious Mockery (Enchantment cantrip)\nCasting Time: 1 action\nRange: 60 ft\nComponents: V\nDuration: Instant\n\nTarget that can hear you makes a Wis save or takes 1d4 psychic damage and has disadvantage on its next attack roll before the end of its next turn."}
+]

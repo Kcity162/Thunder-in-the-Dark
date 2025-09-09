@@ -207,17 +207,36 @@
     let state = {
       q: '',
       filter: 'all',
-      notes: loadNotes(),
+      notes: [],
       activeIndex: 0, // keyboard selection in results
     };
 
-    function loadNotes() {
-      // Prefer saved notes from localStorage; fallback to seeds
+    async function fetchNotes() {
+      // Primary source: st-wiki-notes.json at project root
+      try {
+        const res = await fetch('st-wiki-notes.json', { cache: 'no-store' });
+        if (res.ok) {
+          const data = await res.json();
+          if (Array.isArray(data)) {
+            state.notes = data;
+            // Mirror to localStorage for quick subsequent loads/offline use
+            saveNotes();
+            return;
+          }
+        }
+      } catch (e) { /* fall through to fallback */ }
+
+      // Fallback 1: previously saved localStorage
       try {
         const raw = localStorage.getItem('st-wiki-notes');
-        if (raw) return JSON.parse(raw);
-      } catch {}
-      return SEED_NOTES;
+        if (raw) {
+          state.notes = JSON.parse(raw);
+          return;
+        }
+      } catch (e) { /* ignore */ }
+
+      // Fallback 2: seed notes in this file
+      state.notes = SEED_NOTES;
     }
 
     function saveNotes() {
@@ -540,13 +559,15 @@
     // New note button
     document.getElementById('btnNew').addEventListener('click', quickAddNote);
 
-    // Initial render
-    renderQuick();
-    renderResults();
-
-    // If hash present, open it; else open first result
-    const startId = location.hash.replace('#','');
-    if (startId) openById(startId); else if (filtered()[0]) openById(filtered()[0].id);
+    (async function initFromFile(){
+      await fetchNotes();
+      renderQuick();
+      // If a filter chip (not All) is active from a previous session, show results list by default
+      const forceShow = state.filter !== 'all' && !state.q;
+      renderResults(forceShow);
+      const startId = location.hash.replace('#','');
+      if (startId) openById(startId); else if (filtered()[0]) openById(filtered()[0].id);
+    })();
   </script>
 </body>
 </html>
