@@ -261,9 +261,9 @@
       return sortedNotes(list);
     }
 
-    function renderResults() {
+    function renderResults(forceShow = false) {
       // Show results in the left column only when a search query exists; otherwise show Quick Notes
-      if (!state.q) {
+      if (!state.q && !forceShow) {
         elResultCount.textContent = 0;
         elResultList.innerHTML = '';
         if (elResultsCard) elResultsCard.classList.add('hidden');
@@ -354,14 +354,27 @@
       openById(row.dataset.id);
     });
 
-    filterBtns.forEach(btn => btn.addEventListener('click', () => {
-      state.filter = btn.dataset.filter;
-      filterBtns.forEach(b => b.classList.toggle('bg-indigo-50', b === btn));
-      filterBtns.forEach(b => b.classList.toggle('border-indigo-300', b === btn));
-      filterBtns.forEach(b => b.classList.toggle('text-indigo-700', b === btn));
-      state.activeIndex = 0;
-      renderResults();
-    }));
+            filterBtns.forEach(btn => btn.addEventListener('click', () => {
+        state.filter = btn.dataset.filter;
+
+        // Clear search so we show the full list for the chosen filter
+        state.q = '';
+        if (elSearch) elSearch.value = '';
+
+        // Visual selected state
+        filterBtns.forEach(b => b.classList.toggle('bg-indigo-50', b === btn));
+        filterBtns.forEach(b => b.classList.toggle('border-indigo-300', b === btn));
+        filterBtns.forEach(b => b.classList.toggle('text-indigo-700', b === btn));
+
+        state.activeIndex = 0;
+
+        // If 'all' is selected, hide results and show Quick Notes; otherwise force show results
+        if (state.filter === 'all') {
+            renderResults(false);
+        } else {
+            renderResults(true);
+        }
+        }));
 
     if (elBtnClearSearch) {
       elBtnClearSearch.addEventListener('click', () => {
