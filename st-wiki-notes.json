@@ -18,6 +18,48 @@
     "body": "# Recap\n\nThe party arrived in **Bryn Shander** during heavy snow. Rumors mentioned giants harassing the Ten-Towns.\n\n### Key Events\n- Met Sheriff *Markham Southwell* and Speaker *Duvessa Shane*.\n- A frost giant scouting party searched for *Artus Cimber*.\n- Party defended the walls; townsfolk thankful.\n\n### Hooks\n- Follow leads on **Artus Cimber**.\n- Seek out the wandering giant ally **Harshnag**."
   },
   {
+    "id": "session-01-introduction",
+    "title": "Chapter 1 — Introduction",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1"],
+    "body": "# Chapter 1 — Introduction\n\n- Sets the stage for *Storm King’s Thunder*.\n- Covers history, geography, and politics of the Savage Frontier.\n- Explains the giants’ upheaval after the shattering of the Ordning.\n- Introduces the storm giant royal family and their internal strife, which drives the campaign’s main conflict."
+  },
+  {
+    "id": "session-01-adventure-background",
+    "title": "Chapter 1 — Adventure Background",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1"],
+    "body": "# Adventure Background\n\n- The Savage Frontier (the North) is cold, rugged, and sparsely populated.\n- Features snow-capped mountains, rocky hills, forests, and foggy vales.\n- Dotted with isolated strongholds, ancient burial mounds, and ruins of lost empires.\n- Stretches from Icewind Dale (north) to Daggerford (south), Sea of Swords (west) to Anauroch Desert (east).\n- Travel is dangerous: old roads are long, lonely, and poorly defended.\n- Bandits, barbarians, and monsters prey on isolated settlements.\n- Recently, Tiamat’s dragons threatened the region but were defeated and banished.\n- Now, giants of all types raid and attack on an unprecedented scale:\n  - Frost giants descend from the Spine of the World.\n  - Hill giants ravage the hills for food.\n  - Fire giants march from volcanic foundries.\n  - Cloud giants descend from their castles.\n- Civilization is shaken as giant attacks spread from Icewind Dale to Waterdeep."
+  },
+  {
+    "id": "session-01-the-ordning",
+    "title": "Chapter 1 — The Ordning",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1"],
+    "body": "# The Ordning\n\n- Giant society is organized by the Ordning, a divine caste system made by Annam the All-Father.\n- The Ordning ranks giants by type and individual talent.\n- Caste order:\n  - **Storm giants**: Top rank; wise, powerful, strive to keep peace; many are seers.\n  - **Cloud giants**: Aristocratic, aloof, value wealth and extravagance.\n  - **Fire giants**: Militant, value skill at the forge and in war.\n  - **Frost giants**: Brutal raiders, value raw strength.\n  - **Stone giants**: Live underground, value stone artistry, see surface as a dream realm.\n  - **Hill giants**: Bottom rank; led by gluttony and size.\n- Dragons have been enemies of giants since the fall of Ostoria (last giant empire).\n- Annam recently shattered the Ordning, throwing all castes into chaos.\n- Now, each giant lord seeks supremacy through conquest, raids, or rediscovering lost power, causing widespread chaos."
+  },
+  {
+    "id": "session-01-hekaton-and-daughters",
+    "title": "Chapter 1 — King Hekaton and His Daughters",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1"],
+    "body": "# King Hekaton and His Daughters\n\n- King Hekaton, a storm giant, ruled from the undersea citadel Maelstrom on the Wyrmskull Throne (gift from Queen Neri).\n- He commanded all giants and maintained order under the Ordning.\n- Hekaton believed the giants’ age was ending; the gods grew distant, leaving storm giants without guidance.\n- After Annam shattered the Ordning, Hekaton struggled to hold his court together.\n- Queen Neri, beloved by small folk, was assassinated while visiting the Sword Coast.\n- Hekaton was enraged, but Princess Serissa urged him to seek the truth before acting in vengeance.\n- Hekaton himself soon vanished mysteriously.\n- His youngest daughter, Serissa, now rules but faces:\n  - Resentment from her elder sisters Mirran and Nym.\n  - Manipulation by the ancient dragon Iymrith, who has infiltrated the royal court.\n- The royal family’s unrest mirrors the chaos among all giants."
+  },
+  {
+    "id": "session-01-mirran-nym",
+    "title": "Chapter 1 — Mirran and Nym",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1"],
+    "body": "# Mirran and Nym\n\n- Princess Mirran is willful and tempestuous.\n  - Craves the Wyrmskull Throne and dreams of reviving Ostoria’s empire.\n  - Believes power is rightfully hers and wants to sweep away small folk realms.\n- Princess Nym is cold, calculating, and long felt overlooked by her parents.\n  - Encourages Mirran’s ambition but secretly plots to take power herself.\n  - Acts quietly, waiting for rivals to stumble.\n- Both sisters were influenced by Iymrith’s manipulation.\n  - They helped cause their mother’s assassination and their father’s disappearance.\n- Their jealousy and ambition threaten to start a storm giant civil war."
+  },
+  {
+    "id": "session-01-serissa",
+    "title": "Chapter 1 — Serissa",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1"],
+    "body": "# Serissa\n\n- Youngest daughter of King Hekaton and Queen Neri; named heir to the Wyrmskull Throne.\n- Compassionate and thoughtful; shares her mother’s respect for small folk and desire for peace.\n- Took the throne after Hekaton vanished, encouraged by her uncle Uthor.\n- Struggles to command authority; many giant lords have left her court to pursue their own ambitions.\n- Holds the Korolnor Scepter, a relic granting mastery of the throne, but remains isolated.\n- Distrusted by her sisters, manipulated by Iymrith, and doubted by advisors.\n- Seeks allies beyond giantkind, hoping heroes among the small folk can uncover her father’s fate and restore stability."
+  },
+  {
     "id": "npc-harshnag-the-grim",
     "title": "Harshnag the Grim (NPC)",
     "type": "npc",
@@ -1283,5 +1325,12 @@
     "img": "/assets/gods/velsharoon.png",
     "tags": ["neutral-evil"],
     "body": "Duplicate placeholder to ensure JSON validity removed."
+  },
+  {
+    "id": "session-01-adventure-background",
+    "title": "Chapter 1 — Adventure Background",
+    "type": "session",
+    "tags": ["sessions", "storm-kings-thunder", "chapter-1"],
+    "body": "# Adventure Background\n\nThe Savage Frontier (also known as the North) is a cold, rugged, sparsely populated land...\n\n[Back to Introduction](#session-01-introduction)"
   }
 ]
