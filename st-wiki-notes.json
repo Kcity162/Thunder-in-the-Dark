@@ -273,6 +273,214 @@
     "body": "Ancient giant temple hidden in the mountains.\n\n- Houses the oracle of **Annam**.\n- Answers questions when proper rites are observed.\n- Crucial to understanding the **Ordning** upheaval."
   },
   {
+    "id": "location-nightstone",
+    "title": "Location — Nightstone",
+    "type": "location",
+    "img": "/assets/locations/nightstone.png",
+    "tags": ["location", "storm-kings-thunder", "the-savage-frontier", "dessarin-valley"],
+    "body": "Rural village south of **Waterdeep**, scarred by a cloud giant raid at the start of the adventure.\n\n- Launch point for early quests and missing villagers thread.\n- Nearby **Dripping Caves** hide goblins and townsfolk."
+  },
+  {
+    "id": "location-bryn-shander",
+    "title": "Location — Bryn Shander",
+    "type": "location",
+    "img": "/assets/locations/bryn-shander.png",
+    "tags": ["location", "storm-kings-thunder", "ten-towns", "icewind-dale"],
+    "body": "Walled trade‑hub of **Ten‑Towns** perched on a hill. Giants sometimes test its defenses.\n\n- Leaders: **Duvessa Shane** (Speaker), **Markham Southwell** (Sheriff).\n- Gateway to northern hooks like **Artus Cimber** rumors."
+  },
+  {
+    "id": "location-goldenfields",
+    "title": "Location — Goldenfields",
+    "type": "location",
+    "img": "/assets/locations/goldenfields.png",
+    "tags": ["location", "storm-kings-thunder", "dessarin-valley"],
+    "body": "Enormous walled temple‑farm of **Chauntea** feeding much of the North.\n\n- Target of coordinated giant/ogre raids.\n- Key NPCs: **Naxene Drathkala**, **Shalvus Martholio**, **Zi Liang**, **Miros Xelbrin**."
+  },
+  {
+    "id": "location-triboar",
+    "title": "Location — Triboar",
+    "type": "location",
+    "img": "/assets/locations/triboar.png",
+    "tags": ["location", "storm-kings-thunder", "long-road", "dessarin-valley"],
+    "body": "Bustling caravan town on the **Long Road**, famous for horse breeding and smiths.\n\n- Suffers a **fire giant** strike early in SKT.\n- Allies include **Darathra Shendrel**, **Urgala Meltimer**, **Ghelryn Foehammer**, **Othovir**."
+  },
+  {
+    "id": "location-grudd-haug",
+    "title": "Location — Grudd Haug",
+    "type": "location",
+    "img": "/assets/locations/grudd-haug.png",
+    "tags": ["location", "storm-kings-thunder", "hill-giants"],
+    "body": "Squalid **hill giant** steading built along a river, ruled by Chief **Guh**.\n\n- Food‑hoarding, cattle‑stealing menace to frontier hamlets."
+  },
+  {
+    "id": "location-ironslag",
+    "title": "Location — Ironslag",
+    "type": "location",
+    "img": "/assets/locations/ironslag.png",
+    "tags": ["location", "storm-kings-thunder", "fire-giants", "greypeak-mountains"],
+    "body": "Volcanic **fire giant** foundry in the **Graypeak Mountains**.\n\n- Duke **Zalto** rebuilds the **Vonindod** here using enslaved workers."
+  },
+  {
+    "id": "location-svardborg",
+    "title": "Location — Svardborg",
+    "type": "location",
+    "img": "/assets/locations/svardborg.png",
+    "tags": ["location", "storm-kings-thunder", "frost-giants", "sea-of-moving-ice"],
+    "body": "Floating **frost giant** village on broken ice floes.\n\n- **Jarl Storvald** hunts the **Ring of Winter** from this base."
+  },
+  {
+    "id": "location-deadstone-cleft",
+    "title": "Location — Deadstone Cleft",
+    "type": "location",
+    "img": "/assets/locations/deadstone-cleft.png",
+    "tags": ["location", "storm-kings-thunder", "stone-giants", "graypeak-mountains"],
+    "body": "Canyon‑temple complex of reclusive **stone giants**.\n\n- **Thane Kayalithica** spreads a doctrine hostile to smallfolk."
+  },
+  {
+    "id": "location-lyn-armaal",
+    "title": "Location — Lyn Armaal",
+    "type": "location",
+    "img": "/assets/locations/lyn-armaal.png",
+    "tags": ["location", "storm-kings-thunder", "cloud-giants"],
+    "body": "Opulent **cloud giant** castle afloat in the skies.\n\n- **Countess Sansuri** seeks ancient draconic lore and lost Ostorian magic."
+  },
+  {
+    "id": "location-maelstrom",
+    "title": "Location — Maelstrom",
+    "type": "location",
+    "img": "/assets/locations/maelstrom.png",
+    "tags": ["location", "storm-kings-thunder", "storm-giants", "undersea"],
+    "body": "Undersea court of the **storm giants** in a ring of colossal stones.\n\n- Seat of **Serissa**; politics, intrigue, and missing‑king plotlines converge here."
+  },
+  {
+    "id": "location-the-morkoth",
+    "title": "Location — The Morkoth",
+    "type": "location",
+    "img": "/assets/locations/morkoth.png",
+    "tags": ["location", "storm-kings-thunder", "kraken-society", "trackless-sea"],
+    "body": "Infamous **Kraken Society** ship used as a floating prison.\n\n- Central to the **Hekaton** rescue arc."
+  },
+  {
+    "id": "location-purple-rocks",
+    "title": "Location — Purple Rocks",
+    "type": "location",
+    "img": "/assets/locations/purple-rocks.png",
+    "tags": ["location", "storm-kings-thunder", "trackless-sea"],
+    "body": "Remote isles in the **Trackless Sea** with unsettling cult rumors and ties to deep‑sea powers."
+  },
+  {
+    "id": "location-yartar",
+    "title": "Location — Yartar",
+    "type": "location",
+    "img": "/assets/locations/yartar.png",
+    "tags": ["location", "storm-kings-thunder", "dessarin-valley", "dessarin-river"],
+    "body": "River city of merchants and spies.\n\n- Ruled by **Waterbaron Nestra Ruthiol**; intrigues involve **Lord Drylund** and covert societies."
+  },
+  {
+    "id": "location-waterdeep",
+    "title": "Location — Waterdeep, the City of Splendors",
+    "type": "location",
+    "img": "/assets/locations/waterdeep.png",
+    "tags": ["location", "forgotten-realms", "sword-coast"],
+    "body": "Cosmopolitan hub of the **Sword Coast**; guilds, noble houses, and adventurers galore.\n\n- Beneath lies **Skullport** and **Undermountain**.\n- Frequent staging point between SKT chapters."
+  },
+  {
+    "id": "location-silverymoon",
+    "title": "Location — Silverymoon",
+    "type": "location",
+    "img": "/assets/locations/silverymoon.png",
+    "tags": ["location", "forgotten-realms", "silver-marches"],
+    "body": "The **Gem of the North**—scholarly, magically warded city allied with the **Harpers** and the **Lords' Alliance**."
+  },
+  {
+    "id": "location-luskan",
+    "title": "Location — Luskan",
+    "type": "location",
+    "img": "/assets/locations/luskan.png",
+    "tags": ["location", "forgotten-realms", "sword-coast"],
+    "body": "Hard‑edged port of **Hosttower of the Arcane** and pirate fleets; a den of sellswords and intrigue."
+  },
+  {
+    "id": "location-neverwinter",
+    "title": "Location — Neverwinter",
+    "type": "location",
+    "img": "/assets/locations/neverwinter.png",
+    "tags": ["location", "forgotten-realms", "sword-coast"],
+    "body": "Rebuilt **Jewel of the North** under Lord **Dagult Neverember**.\n\n- Gateway to **Neverwinter Wood** and **Mount Hotenow**."
+  },
+  {
+    "id": "location-baldurs-gate",
+    "title": "Location — Baldur's Gate",
+    "type": "location",
+    "img": "/assets/locations/baldurs-gate.png",
+    "tags": ["location", "forgotten-realms", "sword-coast"],
+    "body": "Influential trade city split between **Upper**, **Lower**, and the **Outer City**—political knives behind every smile."
+  },
+  {
+    "id": "location-candlekeep",
+    "title": "Location — Candlekeep",
+    "type": "location",
+    "img": "/assets/locations/candlekeep.png",
+    "tags": ["location", "forgotten-realms", "library"],
+    "body": "Fortress‑library of legendary tomes on a seaside bluff.\n\n- Entry traditionally requires a rare book as a gift."
+  },
+  {
+    "id": "location-gauntlgrym",
+    "title": "Location — Gauntlgrym",
+    "type": "location",
+    "img": "/assets/locations/gauntlgrym.png",
+    "tags": ["location", "forgotten-realms", "dwarves", "underdark"],
+    "body": "Mythic **dwarven** city forged around a primal forge; reclaimed and fiercely defended by dwarf kings."
+  },
+  {
+    "id": "location-silverymoon-high-forest",
+    "title": "Location — The High Forest",
+    "type": "location",
+    "img": "/assets/locations/high-forest.png",
+    "tags": ["location", "forgotten-realms", "wilderness"],
+    "body": "Ancient woodland of treants, elves, and ruins of fallen empires; sacred groves and hidden circles abound."
+  },
+  {
+    "id": "location-mirabar",
+    "title": "Location — Mirabar",
+    "type": "location",
+    "img": "/assets/locations/mirabar.png",
+    "tags": ["location", "forgotten-realms", "silver-marches"],
+    "body": "Rich mining city exporting metals and stone across the North; pragmatic, disciplined, and well‑guarded."
+  },
+  {
+    "id": "location-daggerford",
+    "title": "Location — Daggerford",
+    "type": "location",
+    "img": "/assets/locations/daggerford.png",
+    "tags": ["location", "forgotten-realms", "sword-coast"],
+    "body": "Small duchy along the **Delimbiyr River**—a classic base for mid‑level adventures near **Waterdeep**."
+  },
+  {
+    "id": "location-icewind-dale",
+    "title": "Location — Icewind Dale",
+    "type": "location",
+    "img": "/assets/locations/icewind-dale.png",
+    "tags": ["location", "forgotten-realms", "ten-towns"],
+    "body": "Frigid frontier at the top of the world.\n\n- Home to **Ten‑Towns**, blizzards, and white‑dragon rumors."
+  },
+  {
+    "id": "location-anauroch",
+    "title": "Location — Anauroch Desert",
+    "type": "location",
+    "img": "/assets/locations/anauroch.png",
+    "tags": ["location", "forgotten-realms", "ancient-ruins"],
+    "body": "Vast desert hiding **Netherese** ruins and the lairs of ancient foes—harsh travel and dead cities under the sands."
+  },
+  {
+    "id": "location-skullport",
+    "title": "Location — Skullport & Undermountain",
+    "type": "location",
+    "img": "/assets/locations/skullport.png",
+    "tags": ["location", "forgotten-realms", "undermountain"],
+    "body": "Shadowy port beneath **Waterdeep**; black‑market haven leading into the endless megadungeon of **Undermountain**."
+  },
+  {
     "id": "rule-house-critical-hits",
     "title": "House Rule — Critical Hits",
     "type": "rule",
