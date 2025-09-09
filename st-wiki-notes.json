@@ -263,7 +263,7 @@
   },
   {
     "id": "location-eye-of-the-all-father",
-    "title": "Location — Eye of the All-Father",
+    "title": "Eye of the All-Father",
     "type": "location",
     "tags": [
       "temple",
@@ -274,7 +274,7 @@
   },
   {
     "id": "location-nightstone",
-    "title": "Location — Nightstone",
+    "title": "Nightstone",
     "type": "location",
     "img": "/assets/locations/nightstone.png",
     "tags": ["location", "storm-kings-thunder", "the-savage-frontier", "dessarin-valley"],
@@ -282,7 +282,7 @@
   },
   {
     "id": "location-bryn-shander",
-    "title": "Location — Bryn Shander",
+    "title": "Bryn Shander",
     "type": "location",
     "img": "/assets/locations/bryn-shander.png",
     "tags": ["location", "storm-kings-thunder", "ten-towns", "icewind-dale"],
@@ -290,7 +290,7 @@
   },
   {
     "id": "location-goldenfields",
-    "title": "Location — Goldenfields",
+    "title": "Goldenfields",
     "type": "location",
     "img": "/assets/locations/goldenfields.png",
     "tags": ["location", "storm-kings-thunder", "dessarin-valley"],
@@ -298,7 +298,7 @@
   },
   {
     "id": "location-triboar",
-    "title": "Location — Triboar",
+    "title": "Triboar",
     "type": "location",
     "img": "/assets/locations/triboar.png",
     "tags": ["location", "storm-kings-thunder", "long-road", "dessarin-valley"],
@@ -306,7 +306,7 @@
   },
   {
     "id": "location-grudd-haug",
-    "title": "Location — Grudd Haug",
+    "title": "Grudd Haug",
     "type": "location",
     "img": "/assets/locations/grudd-haug.png",
     "tags": ["location", "storm-kings-thunder", "hill-giants"],
@@ -314,7 +314,7 @@
   },
   {
     "id": "location-ironslag",
-    "title": "Location — Ironslag",
+    "title": "Ironslag",
     "type": "location",
     "img": "/assets/locations/ironslag.png",
     "tags": ["location", "storm-kings-thunder", "fire-giants", "greypeak-mountains"],
@@ -322,7 +322,7 @@
   },
   {
     "id": "location-svardborg",
-    "title": "Location — Svardborg",
+    "title": "Svardborg",
     "type": "location",
     "img": "/assets/locations/svardborg.png",
     "tags": ["location", "storm-kings-thunder", "frost-giants", "sea-of-moving-ice"],
@@ -330,7 +330,7 @@
   },
   {
     "id": "location-deadstone-cleft",
-    "title": "Location — Deadstone Cleft",
+    "title": "Deadstone Cleft",
     "type": "location",
     "img": "/assets/locations/deadstone-cleft.png",
     "tags": ["location", "storm-kings-thunder", "stone-giants", "graypeak-mountains"],
@@ -338,7 +338,7 @@
   },
   {
     "id": "location-lyn-armaal",
-    "title": "Location — Lyn Armaal",
+    "title": "Lyn Armaal",
     "type": "location",
     "img": "/assets/locations/lyn-armaal.png",
     "tags": ["location", "storm-kings-thunder", "cloud-giants"],
@@ -346,7 +346,7 @@
   },
   {
     "id": "location-maelstrom",
-    "title": "Location — Maelstrom",
+    "title": "Maelstrom",
     "type": "location",
     "img": "/assets/locations/maelstrom.png",
     "tags": ["location", "storm-kings-thunder", "storm-giants", "undersea"],
@@ -354,7 +354,7 @@
   },
   {
     "id": "location-the-morkoth",
-    "title": "Location — The Morkoth",
+    "title": "The Morkoth",
     "type": "location",
     "img": "/assets/locations/morkoth.png",
     "tags": ["location", "storm-kings-thunder", "kraken-society", "trackless-sea"],
@@ -362,7 +362,7 @@
   },
   {
     "id": "location-purple-rocks",
-    "title": "Location — Purple Rocks",
+    "title": "Purple Rocks",
     "type": "location",
     "img": "/assets/locations/purple-rocks.png",
     "tags": ["location", "storm-kings-thunder", "trackless-sea"],
@@ -370,7 +370,7 @@
   },
   {
     "id": "location-yartar",
-    "title": "Location — Yartar",
+    "title": "Yartar",
     "type": "location",
     "img": "/assets/locations/yartar.png",
     "tags": ["location", "storm-kings-thunder", "dessarin-valley", "dessarin-river"],
@@ -378,7 +378,7 @@
   },
   {
     "id": "location-waterdeep",
-    "title": "Location — Waterdeep, the City of Splendors",
+    "title": "Waterdeep, the City of Splendors",
     "type": "location",
     "img": "/assets/locations/waterdeep.png",
     "tags": ["location", "forgotten-realms", "sword-coast"],
@@ -386,7 +386,7 @@
   },
   {
     "id": "location-silverymoon",
-    "title": "Location — Silverymoon",
+    "title": "Silverymoon",
     "type": "location",
     "img": "/assets/locations/silverymoon.png",
     "tags": ["location", "forgotten-realms", "silver-marches"],
@@ -394,7 +394,7 @@
   },
   {
     "id": "location-luskan",
-    "title": "Location — Luskan",
+    "title": "Luskan",
     "type": "location",
     "img": "/assets/locations/luskan.png",
     "tags": ["location", "forgotten-realms", "sword-coast"],
@@ -402,7 +402,7 @@
   },
   {
     "id": "location-neverwinter",
-    "title": "Location — Neverwinter",
+    "title": "Neverwinter",
     "type": "location",
     "img": "/assets/locations/neverwinter.png",
     "tags": ["location", "forgotten-realms", "sword-coast"],
@@ -410,7 +410,7 @@
   },
   {
     "id": "location-baldurs-gate",
-    "title": "Location — Baldur's Gate",
+    "title": "Baldur's Gate",
     "type": "location",
     "img": "/assets/locations/baldurs-gate.png",
     "tags": ["location", "forgotten-realms", "sword-coast"],
@@ -418,7 +418,7 @@
   },
   {
     "id": "location-candlekeep",
-    "title": "Location — Candlekeep",
+    "title": "Candlekeep",
     "type": "location",
     "img": "/assets/locations/candlekeep.png",
     "tags": ["location", "forgotten-realms", "library"],
@@ -426,7 +426,7 @@
   },
   {
     "id": "location-gauntlgrym",
-    "title": "Location — Gauntlgrym",
+    "title": "Gauntlgrym",
     "type": "location",
     "img": "/assets/locations/gauntlgrym.png",
     "tags": ["location", "forgotten-realms", "dwarves", "underdark"],
@@ -434,7 +434,7 @@
   },
   {
     "id": "location-silverymoon-high-forest",
-    "title": "Location — The High Forest",
+    "title": "The High Forest",
     "type": "location",
     "img": "/assets/locations/high-forest.png",
     "tags": ["location", "forgotten-realms", "wilderness"],
@@ -442,7 +442,7 @@
   },
   {
     "id": "location-mirabar",
-    "title": "Location — Mirabar",
+    "title": "Mirabar",
     "type": "location",
     "img": "/assets/locations/mirabar.png",
     "tags": ["location", "forgotten-realms", "silver-marches"],
@@ -450,7 +450,7 @@
   },
   {
     "id": "location-daggerford",
-    "title": "Location — Daggerford",
+    "title": "Daggerford",
     "type": "location",
     "img": "/assets/locations/daggerford.png",
     "tags": ["location", "forgotten-realms", "sword-coast"],
@@ -458,7 +458,7 @@
   },
   {
     "id": "location-icewind-dale",
-    "title": "Location — Icewind Dale",
+    "title": "Icewind Dale",
     "type": "location",
     "img": "/assets/locations/icewind-dale.png",
     "tags": ["location", "forgotten-realms", "ten-towns"],
@@ -466,7 +466,7 @@
   },
   {
     "id": "location-anauroch",
-    "title": "Location — Anauroch Desert",
+    "title": "Anauroch Desert",
     "type": "location",
     "img": "/assets/locations/anauroch.png",
     "tags": ["location", "forgotten-realms", "ancient-ruins"],
@@ -474,7 +474,7 @@
   },
   {
     "id": "location-skullport",
-    "title": "Location — Skullport & Undermountain",
+    "title": "Skullport & Undermountain",
     "type": "location",
     "img": "/assets/locations/skullport.png",
     "tags": ["location", "forgotten-realms", "undermountain"],
