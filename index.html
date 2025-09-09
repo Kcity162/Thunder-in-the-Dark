@@ -95,6 +95,7 @@
           <div class="flex items-center justify-between card-pad border-b border-slate-200 dark:border-slate-800">
             <div class="text-sm text-slate-600"><span id="resultCount">0</span> results</div>
             <div class="flex items-center gap-2 text-xs text-slate-500">
+              <button id="btnClearSearch" class="px-2 py-1 rounded-md border bg-white hover:bg-slate-100 dark:bg-slate-900 dark:border-slate-700 dark:hover:bg-slate-800">Clear</button>
               <span class="kbd">Enter</span> open • <span class="kbd">↑↓</span> move • <span class="kbd">Esc</span> clear
             </div>
           </div>
@@ -210,6 +211,7 @@
     const filterBtns = Array.from(document.querySelectorAll('.filter-btn'));
     const elResultsCard = document.getElementById('resultsCard');
     const elQuickCard = document.getElementById('quickNotesCard');
+    const elBtnClearSearch = document.getElementById('btnClearSearch');
 
     function typeBadge(t){
       const k = (t||'').toLowerCase();
@@ -270,7 +272,7 @@
         return;
       }
       elResultList.innerHTML = items.map((n, i) => `
-        <li class="note-row px-4 py-3 hover:bg-slate-50 ${i === state.activeIndex ? 'bg-slate-50' : ''}" data-id="${n.id}" data-index="${i}">
+        <li class="note-row px-4 py-3 hover:bg-slate-100 dark:hover:bg-slate-800 ${i === state.activeIndex ? 'bg-slate-100 dark:bg-slate-800' : ''}" data-id="${n.id}" data-index="${i}">
           <div class="flex items-center justify-between">
             <div class="font-medium">${n.title}</div>
             ${typeBadge(n.type)}
@@ -350,13 +352,44 @@
       renderResults();
     }));
 
+    if (elBtnClearSearch) {
+      elBtnClearSearch.addEventListener('click', () => {
+        state.q = '';
+        state.activeIndex = 0;
+        if (elSearch) { elSearch.value = ''; elSearch.focus(); }
+        renderResults();
+      });
+    }
+
     // Keyboard navigation
     document.addEventListener('keydown', (e) => {
       const cmdK = (e.key.toLowerCase() === 'k' && (e.metaKey || e.ctrlKey));
       if (cmdK) { e.preventDefault(); elSearch.focus(); elSearch.select(); return; }
       if (document.activeElement === elSearch) {
         if (e.key === 'Escape') { elSearch.value=''; state.q=''; renderResults(); elSearch.blur(); }
-        if (e.key === 'Enter') openActive();
+        // Allow arrow navigation while typing (only when there is a query)
+        if ((e.key === 'ArrowDown' || e.key === 'ArrowUp') && state.q) {
+          e.preventDefault();
+          const items = filtered();
+          if (items.length) {
+            if (e.key === 'ArrowDown') state.activeIndex = Math.min(items.length - 1, state.activeIndex + 1);
+            if (e.key === 'ArrowUp')   state.activeIndex = Math.max(0, state.activeIndex - 1);
+            renderResults();
+            const activeEl = elResultList.querySelector(`[data-index="${state.activeIndex}"]`);
+            if (activeEl) activeEl.scrollIntoView({ block: 'nearest' });
+          }
+          return;
+        }
+        if (e.key === 'Enter') { e.preventDefault(); openActive(); }
+        return;
+      }
+      // Escape key clears search even when input is not focused
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        if (elSearch) { elSearch.value = ''; }
+        state.q = '';
+        state.activeIndex = 0;
+        renderResults();
         return;
       }
       const items = filtered();
