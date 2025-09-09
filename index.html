@@ -80,7 +80,6 @@
         </div>
       </div>
       <nav class="flex items-center gap-2 text-sm">
-        <button id="btnNew" class="px-3 py-2 rounded-lg border bg-white hover:bg-slate-100 dark:bg-slate-900 dark:border-slate-700 dark:hover:bg-slate-800">New Note</button>
         <button id="btnExport" class="px-3 py-2 rounded-lg border bg-white hover:bg-slate-100 dark:bg-slate-900 dark:border-slate-700 dark:hover:bg-slate-800">Export JSON</button>
         <label class="px-3 py-2 rounded-lg border bg-white hover:bg-slate-100 dark:bg-slate-900 dark:border-slate-700 dark:hover:bg-slate-800 cursor-pointer">
           Import JSON <input id="fileImport" type="file" accept="application/json" class="hidden" />
@@ -127,6 +126,14 @@
       </div>
     </section>
   </div>
+
+  <!-- Floating Action Button (New Note) -->
+  <button id="btnNew" aria-label="New note" title="New note"
+          class="fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-lg bg-indigo-600 text-white text-2xl leading-none
+                 flex items-center justify-center hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300
+                 dark:bg-indigo-500 dark:hover:bg-indigo-600 dark:focus:ring-indigo-800">
+    +
+  </button>
 
   <!-- Minimal Markdown renderer (tiny) -->
   <script>
