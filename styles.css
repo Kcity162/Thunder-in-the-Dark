@@ -1,0 +1,61 @@
+:root{
+    --card-bg:#ffffff;
+    --card-border:#e5e7eb;
+    --muted:#64748b;
+  }
+  .dark :root{
+    --card-bg:#0b1220;
+    --card-border:#1f2937;
+    --muted:#94a3b8;
+  }
+  
+  /* Base */
+  * { scrollbar-width: thin; }
+  body {
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+  .note-row { cursor: pointer; transition: background .15s ease, transform .08s ease; }
+  .note-row:active { transform: scale(0.997); }
+  
+  .kbd { border:1px solid var(--card-border); padding:0 .25rem; border-radius:.25rem; font-size:.75rem; background:#fff; }
+  .dark .kbd { background:#0b1220; }
+  
+  .avatar-50 { width:50px; height:50px; border-radius:9999px; object-fit:cover; }
+  .avatar-ring { box-shadow: 0 0 0 2px var(--card-bg), 0 0 0 3px var(--card-border); }
+  
+  .clamp-1 { display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; }
+  
+  .card { background:var(--card-bg); border:1px solid var(--card-border); border-radius:.75rem; box-shadow:0 1px 1px rgba(0,0,0,.04); }
+  .card-pad { padding:1rem; }
+  
+  /* Tags */
+  .tag { display:inline-block; font-size:.75rem; line-height:1; border-radius:9999px; padding:.25rem .5rem; background:#eef2ff; color:#3730a3; }
+  .dark .tag { background:#111827; color:#a5b4fc; }
+  
+  /* Type badges */
+  .type-badge { display:inline-block; font-size:.7rem; line-height:1; border-radius:9999px; padding:.25rem .5rem; font-weight:600; letter-spacing:.01em; }
+  
+  .type-session { background:#ecfeff; color:#155e75; }
+  .type-npc     { background:#fef9c3; color:#854d0e; }
+  .type-location{ background:#e0e7ff; color:#3730a3; }
+  .type-rule    { background:#dcfce7; color:#166534; }
+  .type-faction { background:#fee2e2; color:#991b1b; }
+  .type-god     { background:#fae8ff; color:#86198f; }
+  
+  .dark .type-session { background:#083344; color:#67e8f9; }
+  .dark .type-npc     { background:#422006; color:#fde68a; }
+  .dark .type-location{ background:#111827; color:#a5b4fc; }
+  .dark .type-rule    { background:#052e16; color:#86efac; }
+  .dark .type-faction { background:#450a0a; color:#fecaca; }
+  .dark .type-god     { background:#3b0a3e; color:#f0abfc; }
+  
+  /* Header */
+  header.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid var(--card-border);
+    background: transparent;
+    backdrop-filter: none;
+  }
+  .dark header.sticky { background: transparent; }

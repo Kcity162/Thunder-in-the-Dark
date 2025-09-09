@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Storm King's Thunder — DM Wiki</title>
+  <title>Thunder in the Dark — DM Wiki</title>
   <script>
     (function(){
       try{
@@ -18,50 +18,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{ --card-bg:#ffffff; --card-border:#e5e7eb; --muted:#64748b; }
-    .dark :root{ --card-bg:#0b1220; --card-border:#1f2937; --muted:#94a3b8; }
-    * { scrollbar-width: thin; }
-    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
-    .note-row { cursor: pointer; transition: background .15s ease, transform .08s ease; }
-    .note-row:active { transform: scale(0.997); }
-    .tag { display:inline-block; font-size:.75rem; line-height:1; border-radius:9999px; padding:.25rem .5rem; background:#eef2ff; color:#3730a3; }
-    .dark .tag { background:#111827; color:#a5b4fc; }
-    .type-badge { display:inline-block; font-size:.7rem; line-height:1; border-radius:9999px; padding:.25rem .5rem; font-weight:600; letter-spacing:.01em; }
-    .type-session { background:#ecfeff; color:#155e75; }
-    .type-npc { background:#fef9c3; color:#854d0e; }
-    .type-location { background:#e0e7ff; color:#3730a3; }
-    .type-rule { background:#dcfce7; color:#166534; }
-    .type-faction { background:#fee2e2; color:#991b1b; }
-    .dark .type-session { background:#083344; color:#67e8f9; }
-    .dark .type-npc { background:#422006; color:#fde68a; }
-    .dark .type-location { background:#111827; color:#a5b4fc; }
-    .dark .type-rule { background:#052e16; color:#86efac; }
-    .dark .type-faction { background:#450a0a; color:#fecaca; }
-    .kbd { border:1px solid var(--card-border); padding:0 .25rem; border-radius:.25rem; font-size:.75rem; background:#fff; }
-    .dark .kbd { background:#0b1220; }
-    .avatar-50 { width:50px; height:50px; border-radius:9999px; object-fit:cover; }
-    .avatar-ring { box-shadow: 0 0 0 2px var(--card-bg), 0 0 0 3px var(--card-border); }
-    .clamp-1 { display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; }
-    .card { background:var(--card-bg); border:1px solid var(--card-border); border-radius: .75rem; box-shadow: 0 1px 1px rgba(0,0,0,.04); }
-    .card-pad { padding: 1rem; }
-    header.sticky {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      border-bottom: 1px solid var(--card-border);
-      background: transparent;
-      backdrop-filter: none;
-    }
-    .dark header.sticky {
-      background: transparent;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="min-h-screen bg-slate-200 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
   <!-- App Shell -->
   <div class="max-w-7xl mx-auto p-4 md:p-6">
-    <header class="sticky flex items-center justify-between gap-3 mb-4 px-1 py-2 sticky">
+    <header class="sticky top-0 flex items-center justify-between gap-3 mb-4 px-1 py-2">
       <div class="w-full max-w-5xl">
         <div class="relative">
           <input id="search" type="search" placeholder="Search notes (⌘/Ctrl + K)" class="w-full rounded-xl border px-4 py-3 pr-10 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
@@ -120,10 +82,12 @@
       <div class="md:col-span-2 grid gap-4">
         <article id="reader" class="card card-pad prose prose-slate max-w-none dark:prose-invert">
           <h2 class="m-0">Welcome 👋</h2>
-          <p>Select a note, or press <span class="kbd">⌘/Ctrl</span> + <span class="kbd">K</span> to search. This is your lightweight, single‑file DM wiki for <em>Storm King's Thunder</em>.</p>
+          <p>Select a note, or press <span class="kbd">⌘/Ctrl</span> + <span class="kbd">K</span> to search. This is your lightweight, single-file DM wiki for <em>Storm King's Thunder</em>.</p>
           <hr />
           <pre class="text-xs bg-slate-50 p-3 rounded-lg overflow-auto"><code>Repo idea
 ├── index.html              # this file
+├── app.js                  # app logic
+├── styles.css              # custom styles
 ├── /notes/ (optional)      # if you split notes later
 │   ├── sessions/
 │   ├── npcs/
@@ -144,429 +108,54 @@
     +
   </button>
 
-  <!-- Minimal Markdown renderer (tiny) -->
+  <!-- External App Logic -->
+  <script type="module" src="app.js"></script>
+  <!-- Diagnostics (temporary) -->
+  <div id="diag" class="fixed bottom-4 left-4 max-w-md hidden bg-white text-slate-900 border border-red-300 rounded-lg shadow p-3 text-sm z-50">
+    <strong>JS Diagnostics</strong>
+    <div id="diagBody" class="mt-2 whitespace-pre-wrap"></div>
+    <button id="diagClose" class="mt-2 px-2 py-1 border rounded">Hide</button>
+  </div>
   <script>
-    function md(src = "") {
-      return src
-        .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-        .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-        .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-        .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
-        .replace(/\*(.*?)\*/gim, '<em>$1</em>')
-        .replace(/`([^`]+)`/g, '<code>$1</code>')
-        .replace(/\n\n/g, '</p><p>')
-        .replace(/\n/g, '<br/>')
-    }
-  </script>
-
-  <!-- Data & App Logic -->
-  <script>
-    /**
-     * Starter notes — edit freely. Keep ids unique.
-     */
-    const SEED_NOTES = [
-      {
-        id: 'session-01-meeting-in-bryn-shander',
-        title: 'Session 01 — Trouble in Bryn Shander',
-        type: 'session',
-        tags: ['sessions','bryn-shander','ten-towns'],
-        body: `# Recap\n\nThe party arrived in **Bryn Shander** during heavy snow. Rumors mentioned giants harassing the Ten-Towns.\n\n### Key Events\n- Met Sheriff *Markham Southwell* and Speaker *Duvessa Shane*.\n- A frost giant scouting party searched for *Artus Cimber*.\n- Party defended the walls; townsfolk thankful.\n\n### Hooks\n- Follow leads on **Artus Cimber**.\n- Seek out the wandering giant ally **Harshnag**.`
-      },
-      {
-        id: 'npc-harshnag-the-grim',
-        title: 'Harshnag the Grim (NPC)',
-        type: 'npc',
-        img: 'https://via.placeholder.com/50?text=HN',
-        tags: ['giants','ally','frost-giant'],
-        body: `A battle-hardened **frost giant** who opposes the Ordning's chaos.\n\n- Favors mortals who stand against monstrous giants.\n- Often roams the **Spine of the World**.\n- Can guide the party to the **Eye of the All-Father**.`
-      },
-      {
-        id: 'location-eye-of-the-all-father',
-        title: 'Location — Eye of the All-Father',
-        type: 'location',
-        tags: ['temple','ancient','spine-of-the-world'],
-        body: `Ancient giant temple hidden in the mountains.\n\n- Houses the oracle of **Annam**.\n- Answers questions when proper rites are observed.\n- Crucial to understanding the **Ordning** upheaval.`
-      },
-      {
-        id: 'rule-house-critical-hits',
-        title: 'House Rule — Critical Hits',
-        type: 'rule',
-        tags: ['rules','combat'],
-        body: `**Crits:** Roll damage dice twice (\`2d\`) + modifiers once. Brutal Critical features add extra dice after doubling.`
-      },
-      {
-        id: 'faction-harpers',
-        title: 'Faction — Harpers',
-        type: 'faction',
-        tags: ['faction','harpers','allies'],
-        body: `A semi-secret network promoting equality and opposing tyranny. Potential patrons or quest-givers in the North.`
-      }
-    ];
-
-    // --- State ---
-    let state = {
-      q: '',
-      filter: 'all',
-      notes: [],
-      activeIndex: 0, // keyboard selection in results
-    };
-
-    async function fetchNotes() {
-      // Primary source: st-wiki-notes.json at project root
-      try {
-        const res = await fetch('st-wiki-notes.json', { cache: 'no-store' });
-        if (res.ok) {
-          const data = await res.json();
-          if (Array.isArray(data)) {
-            state.notes = data;
-            // Mirror to localStorage for quick subsequent loads/offline use
-            saveNotes();
-            return;
-          }
-        }
-      } catch (e) { /* fall through to fallback */ }
-
-      // Fallback 1: previously saved localStorage
-      try {
-        const raw = localStorage.getItem('st-wiki-notes');
-        if (raw) {
-          state.notes = JSON.parse(raw);
-          return;
-        }
-      } catch (e) { /* ignore */ }
-
-      // Fallback 2: seed notes in this file
-      state.notes = SEED_NOTES;
+    // Show diagnostics panel with a message
+    function showDiag(msg){
+      try{
+        const box = document.getElementById('diag');
+        const body = document.getElementById('diagBody');
+        body.textContent = (body.textContent ? body.textContent + "\n" : "") + String(msg);
+        box.classList.remove('hidden');
+        document.getElementById('diagClose').onclick = () => box.classList.add('hidden');
+      }catch(_e){}
     }
 
-    function saveNotes() {
-      localStorage.setItem('st-wiki-notes', JSON.stringify(state.notes));
-    }
+    // Basic signal that inline JS is executing
+    showDiag('Inline JS ran: '+ new Date().toLocaleTimeString());
 
-    // --- Elements ---
-    const elSearch = document.getElementById('search');
-    const elResultList = document.getElementById('resultList');
-    const elResultCount = document.getElementById('resultCount');
-    const elReader = document.getElementById('reader');
-    const elQuick = document.getElementById('quickList');
-    const filterBtns = Array.from(document.querySelectorAll('.filter-btn'));
-    const elResultsCard = document.getElementById('resultsCard');
-    const elQuickCard = document.getElementById('quickNotesCard');
-    const elBtnClearSearch = document.getElementById('btnClearSearch');
-    const btnMore = document.getElementById('btnMore');
-    const moreMenu = document.getElementById('moreMenu');
+    // Capture runtime errors
+    window.addEventListener('error', (e)=>{
+      showDiag('Error: ' + (e.message || e.error));
+    });
+    window.addEventListener('unhandledrejection', (e)=>{
+      showDiag('Unhandled Promise Rejection: ' + (e.reason && (e.reason.message||e.reason)));
+    });
 
-    function typeBadge(t){
-      const k = (t||'').toLowerCase();
-      const cls = ['session','npc','location','rule','faction'].includes(k) ? k : 'session';
-      const label = (t||'').charAt(0).toUpperCase() + (t||'').slice(1);
-      return `<span class="type-badge type-${cls}">${label}</span>`;
-    }
-    // --- Helpers ---
-    function avatarImg(n){
-      if (n && n.type === 'npc' && n.img) {
-        return `<img src="${escapeHtml(n.img)}" alt="${escapeHtml(n.title)}" class="avatar-50 avatar-ring">`;
-      }
-      return '';
-    }
-    function indexOfId(list, id) { return list.findIndex(n => n.id === id); }
-
-    function normalize(s) { return (s || '').toLowerCase(); }
-
-    function matches(note, q) {
-      if (!q) return true;
-      const s = normalize(q);
-      return normalize(note.title).includes(s)
-        || normalize(note.body).includes(s)
-        || (note.tags || []).some(t => normalize(t).includes(s));
-    }
-
-    function typeAllows(note, filter) {
-      if (filter === 'all') return true;
-      // Tag-based filters use the prefix `tag:`
-      if (filter && filter.startsWith('tag:')) {
-        const tag = filter.slice(4).toLowerCase();
-        return (note.tags || []).some(t => (t || '').toLowerCase() === tag);
-      }
-      return note.type === filter;
-    }
-
-    function sortedNotes(list) {
-      // Simple sort: sessions newest first, else alphabetical
-      return [...list].sort((a, b) => {
-        if (a.type === 'session' && b.type !== 'session') return -1;
-        if (b.type === 'session' && a.type !== 'session') return 1;
-        return a.title.localeCompare(b.title);
-      });
-    }
-
-    function filtered() {
-      const list = state.notes.filter(n => typeAllows(n, state.filter) && matches(n, state.q));
-      return sortedNotes(list);
-    }
-
-    function renderResults(forceShow = false) {
-      // Show results in the left column only when a search query exists; otherwise show Quick Notes
-      if (!state.q && !forceShow) {
-        elResultCount.textContent = 0;
-        elResultList.innerHTML = '';
-        if (elResultsCard) elResultsCard.classList.add('hidden');
-        if (elQuickCard) elQuickCard.classList.remove('hidden');
-        return;
+    // Check that the module script was requested by the browser
+    setTimeout(()=>{
+      if(!window.__APP_BOOTED__){
+        showDiag('app.js did not signal boot. Possible causes: 1) app.js missing/wrong path, 2) syntax error stopping execution, 3) fetch of JSON blocked (file://)');
       } else {
-        if (elResultsCard) elResultsCard.classList.remove('hidden');
-        if (elQuickCard) elQuickCard.classList.add('hidden');
+        showDiag('app.js signalled boot.');
       }
-      const items = filtered();
-      elResultCount.textContent = items.length;
-      if (items.length === 0) {
-        elResultList.innerHTML = `
-          <li class="px-4 py-6 text-sm text-slate-500">
-            No results. Try different keywords or filters.
-          </li>`;
-        return;
+    }, 1500);
+
+    // Optional quick JSON reachability check (safe even if the file does not exist)
+    (async()=>{
+      try{
+        const r = await fetch('./st-wiki-notes.json', {cache:'no-store'});
+        showDiag('JSON fetch status: ' + r.status);
+      }catch(err){
+        showDiag('JSON fetch failed (likely due to file:// or wrong path): ' + err);
       }
-      elResultList.innerHTML = items.map((n, i) => `
-        <li class="note-row px-4 py-3 hover:bg-slate-100 dark:hover:bg-slate-800 ${i === state.activeIndex ? 'bg-slate-100 dark:bg-slate-800' : ''}" data-id="${n.id}" data-index="${i}">
-          <div class="flex items-start gap-3">
-            ${avatarImg(n)}
-            <div class="min-w-0 flex-1">
-              <div class="flex items-center justify-between">
-                <div class="font-medium clamp-1">${n.title}</div>
-                ${typeBadge(n.type)}
-              </div>
-              <div class="text-sm text-slate-600 clamp-1">${escapeHtml((n.body || '').replace(/\n/g,' ')).slice(0, 140)}…</div>
-              <div class="mt-1 flex flex-wrap gap-1">${(n.tags||[]).map(t => `<span class="tag">${t}</span>`).join('')}</div>
-            </div>
-          </div>
-        </li>
-      `).join('');
-    }
-
-    function renderQuick() {
-      const sections = [
-        ['Latest Session', state.notes.find(n => n.type==='session')?.id],
-        ['Harshnag', 'npc-harshnag-the-grim'],
-        ['Eye of the All‑Father', 'location-eye-of-the-all-father'],
-        ['House Crit Rule', 'rule-house-critical-hits'],
-      ];
-      elQuick.innerHTML = sections.map(([label, id]) => id ? `<li><a class="text-indigo-600 hover:underline" href="#${id}">${label}</a></li>` : '').join('');
-    }
-
-    function escapeHtml(s) {
-      return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-    }
-
-    function openById(id) {
-      const idx = indexOfId(state.notes, id);
-      if (idx === -1) return;
-      const n = state.notes[idx];
-      const html = `
-        <div class="flex items-center gap-3">
-          ${avatarImg(n)}
-          <div>
-            <h2 class="mt-0 mb-0 font-extrabold">${n.title}</h2>
-            <div class="mt-2 mb-3 flex items-center gap-2 flex-wrap">
-              ${typeBadge(n.type)}
-              <div class="flex flex-wrap gap-1">${(n.tags||[]).length ? (n.tags||[]).map(t => `<span class=\"tag\">${t}</span>`).join('') : '<span class="text-sm text-slate-400">—</span>'}</div>
-            </div>
-          </div>
-        </div>
-        <hr class="mb-3"/>
-        <div class="mt-2">${md(escapeHtml(n.body))}</div>
-      `;
-      elReader.innerHTML = html;
-      // Update selection in results
-      const items = filtered();
-      const pos = items.findIndex(x => x.id === id);
-      state.activeIndex = Math.max(0, pos);
-      renderResults();
-      // Scroll selected into view
-      const activeEl = elResultList.querySelector(`[data-id="${id}"]`);
-      if (activeEl) activeEl.scrollIntoView({ block: 'nearest' });
-      // Hash for deep link
-      location.hash = id;
-    }
-
-    function openActive() {
-      if (!state.q) return; // Only open from results when a query is present
-      const items = filtered();
-      const item = items[state.activeIndex];
-      if (item) openById(item.id);
-    }
-
-    // --- Events ---
-    elSearch.addEventListener('input', (e) => {
-      state.q = e.target.value.trim();
-      state.activeIndex = 0;
-      renderResults();
-    });
-
-    elResultList.addEventListener('click', (e) => {
-      const row = e.target.closest('.note-row');
-      if (!row) return;
-      openById(row.dataset.id);
-    });
-
-            filterBtns.forEach(btn => btn.addEventListener('click', () => {
-        state.filter = btn.dataset.filter;
-
-        // Clear search so we show the full list for the chosen filter
-        state.q = '';
-        if (elSearch) elSearch.value = '';
-
-        // Visual selected state
-        filterBtns.forEach(b => b.classList.toggle('bg-indigo-50', b === btn));
-        filterBtns.forEach(b => b.classList.toggle('border-indigo-300', b === btn));
-        filterBtns.forEach(b => b.classList.toggle('text-indigo-700', b === btn));
-
-        state.activeIndex = 0;
-
-        // If 'all' is selected, hide results and show Quick Notes; otherwise force show results
-        if (state.filter === 'all') {
-            renderResults(false);
-        } else {
-            renderResults(true);
-        }
-        }));
-
-    if (elBtnClearSearch) {
-      elBtnClearSearch.addEventListener('click', () => {
-        state.q = '';
-        state.activeIndex = 0;
-        if (elSearch) { elSearch.value = ''; elSearch.focus(); }
-        renderResults();
-      });
-    }
-
-    // More menu (⋯) toggle
-    if (btnMore && moreMenu) {
-      btnMore.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const isOpen = !moreMenu.classList.contains('hidden');
-        moreMenu.classList.toggle('hidden');
-        btnMore.setAttribute('aria-expanded', String(!isOpen));
-      });
-      // Click outside closes the menu
-      document.addEventListener('click', () => {
-        if (!moreMenu.classList.contains('hidden')) {
-          moreMenu.classList.add('hidden');
-          btnMore.setAttribute('aria-expanded', 'false');
-        }
-      });
-    }
-
-    // Print action (moved from inline onclick)
-    const elBtnPrint = document.getElementById('btnPrint');
-    if (elBtnPrint) {
-      elBtnPrint.addEventListener('click', () => window.print());
-    }
-
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-      const cmdK = (e.key.toLowerCase() === 'k' && (e.metaKey || e.ctrlKey));
-      if (cmdK) { e.preventDefault(); elSearch.focus(); elSearch.select(); return; }
-      if (document.activeElement === elSearch) {
-        if (e.key === 'Escape') { elSearch.value=''; state.q=''; renderResults(); elSearch.blur(); }
-        // Allow arrow navigation while typing (only when there is a query)
-        if ((e.key === 'ArrowDown' || e.key === 'ArrowUp') && state.q) {
-          e.preventDefault();
-          const items = filtered();
-          if (items.length) {
-            if (e.key === 'ArrowDown') state.activeIndex = Math.min(items.length - 1, state.activeIndex + 1);
-            if (e.key === 'ArrowUp')   state.activeIndex = Math.max(0, state.activeIndex - 1);
-            renderResults();
-            const activeEl = elResultList.querySelector(`[data-index="${state.activeIndex}"]`);
-            if (activeEl) activeEl.scrollIntoView({ block: 'nearest' });
-          }
-          return;
-        }
-        if (e.key === 'Enter') { e.preventDefault(); openActive(); }
-        return;
-      }
-      // Escape key clears search even when input is not focused
-      if (e.key === 'Escape') {
-        e.preventDefault();
-        if (moreMenu && !moreMenu.classList.contains('hidden')) {
-          moreMenu.classList.add('hidden');
-          if (btnMore) btnMore.setAttribute('aria-expanded', 'false');
-          return;
-        }
-        if (elSearch) { elSearch.value = ''; }
-        state.q = '';
-        state.activeIndex = 0;
-        renderResults();
-        return;
-      }
-      const items = filtered();
-      if (e.key === 'ArrowDown') { e.preventDefault(); state.activeIndex = Math.min(items.length-1, state.activeIndex+1); renderResults(); }
-      if (e.key === 'ArrowUp') { e.preventDefault(); state.activeIndex = Math.max(0, state.activeIndex-1); renderResults(); }
-      if (e.key === 'Enter') { e.preventDefault(); openActive(); }
-    });
-
-    // Deep link support
-    window.addEventListener('hashchange', () => {
-      const id = location.hash.replace('#','');
-      if (id) openById(id);
-    });
-
-    // Export/Import
-    document.getElementById('btnExport').addEventListener('click', () => {
-      const blob = new Blob([JSON.stringify(state.notes, null, 2)], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = 'st-wiki-notes.json'; a.click();
-      URL.revokeObjectURL(url);
-    });
-
-    document.getElementById('fileImport').addEventListener('change', (e) => {
-      const file = e.target.files?.[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = () => {
-        try {
-          const data = JSON.parse(reader.result);
-          if (!Array.isArray(data)) throw new Error('Expected an array of notes');
-          state.notes = data;
-          saveNotes();
-          renderQuick();
-          renderResults();
-          if (state.notes[0]) openById(state.notes[0].id);
-        } catch (err) {
-          alert('Import failed: ' + err.message);
-        }
-      };
-      reader.readAsText(file);
-    });
-
-    // Quick add note (simple prompts to avoid heavy UI)
-    function kebab(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');}
-    function quickAddNote(){
-      const title = prompt('Title for the new note?'); if(!title) return;
-      const type = prompt('Type (session, npc, location, rule, faction)?','session') || 'session';
-      const tags = (prompt('Tags (comma separated)?','')||'').split(',').map(t=>t.trim()).filter(Boolean);
-      const id = kebab(`${type}-${title}`);
-      const body = `# ${title}\n\nWrite your content here...`;
-      const note = { id, title, type, tags, body };
-      state.notes.unshift(note);
-      saveNotes();
-      renderQuick();
-      renderResults();
-      openById(id);
-    }
-
-
-    // New note button
-    document.getElementById('btnNew').addEventListener('click', quickAddNote);
-
-    (async function initFromFile(){
-      await fetchNotes();
-      renderQuick();
-      // If a filter chip (not All) is active from a previous session, show results list by default
-      const forceShow = state.filter !== 'all' && !state.q;
-      renderResults(forceShow);
-      const startId = location.hash.replace('#','');
-      if (startId) openById(startId); else if (filtered()[0]) openById(filtered()[0].id);
     })();
   </script>
 </body>
