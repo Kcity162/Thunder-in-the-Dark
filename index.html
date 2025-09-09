@@ -72,6 +72,11 @@
           <button data-filter="location" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Locations</button>
           <button data-filter="rule" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Rules</button>
           <button data-filter="faction" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Factions</button>
+          <button data-filter="tag:items" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Items</button>
+          <button data-filter="tag:equipment" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Equipment</button>
+          <button data-filter="tag:lore" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Lore</button>
+          <button data-filter="tag:gods" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Gods</button>
+          <button data-filter="tag:spells" class="filter-btn px-3 py-1.5 rounded-full border bg-white text-sm transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">Spells</button>
         </div>
       </div>
       <nav class="flex items-center gap-2 text-sm">
@@ -233,7 +238,13 @@
     }
 
     function typeAllows(note, filter) {
-      return filter === 'all' || note.type === filter;
+      if (filter === 'all') return true;
+      // Tag-based filters use the prefix `tag:`
+      if (filter && filter.startsWith('tag:')) {
+        const tag = filter.slice(4).toLowerCase();
+        return (note.tags || []).some(t => (t || '').toLowerCase() === tag);
+      }
+      return note.type === filter;
     }
 
     function sortedNotes(list) {
