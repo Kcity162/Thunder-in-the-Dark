@@ -68,6 +68,7 @@ function md(src = "") {
       const res = await fetch('st-wiki-notes.json', { cache: 'no-store' });
       if (!res.ok) throw new Error(`HTTP ${res.status} when fetching st-wiki-notes.json`);
       const data = await res.json();
+      console.log(data)
   
       // Accept either a raw array or an object with a `notes` array
       const incoming = Array.isArray(data) ? data : (data && Array.isArray(data.notes) ? data.notes : null);
@@ -205,6 +206,7 @@ const elBtnClearSearch = document.getElementById('btnClearSearch');
       ['Harshnag', 'npc-harshnag-the-grim'],
       ['Eye of the All-Father', 'location-eye-of-the-all-father'],
       ['House Crit Rule', 'rule-house-critical-hits'],
+      ['Wish Spell', 'spell-wish']
     ];
     elQuick.innerHTML = sections.map(([label, id]) => id ? `<li><a class="text-indigo-600 hover:underline" href="#${id}">${label}</a></li>` : '').join('');
   }
