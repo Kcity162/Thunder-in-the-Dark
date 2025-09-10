@@ -118,8 +118,11 @@
     <button id="diagClose" class="mt-2 px-2 py-1 border rounded">Hide</button>
   </div>
   <script>
+    let updateCounter = 0;
     // Show diagnostics panel with a message
     function showDiag(msg){
+      updateCounter++;
+      console.log("Update A" + updateCounter);
       try{
         const box = document.getElementById('diag');
         const body = document.getElementById('diagBody');
