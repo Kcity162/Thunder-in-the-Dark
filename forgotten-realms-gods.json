@@ -1,0 +1,1707 @@
+[
+  {
+    "id": "god-ao",
+    "title": "Ao (Overgod)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "overgod"
+    ],
+    "body": "Ao is the enigmatic **Overgod** who stands above all deities of the Realms.\n- Oversees cosmic balance.\n- Does not grant spells.\n- Enforces rules among gods."
+  },
+  {
+    "id": "god-azuth",
+    "title": "Azuth (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-neutral",
+      "arcana"
+    ],
+    "body": "Azuth, the **High One**, patron of wizards and arcane mastery.\n- Guides responsible magic use.\n- Ally of Mystra."
+  },
+  {
+    "id": "god-bane",
+    "title": "Bane (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "war",
+      "tyranny"
+    ],
+    "body": "Bane, the **Black Hand**, god of tyranny and fear.\n- Patron of conquerors and despots.\n- Seeks absolute domination."
+  },
+  {
+    "id": "god-beshaba",
+    "title": "Beshaba (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "trickery",
+      "misfortune"
+    ],
+    "body": "Beshaba, **Lady of Misfortune**, spreads bad luck and accidents.\n- Feared at festivals and births.\n- Twin/rival of Tymora."
+  },
+  {
+    "id": "god-chauntea",
+    "title": "Chauntea (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "life",
+      "nature"
+    ],
+    "body": "Chauntea, the **Great Mother**, governs agriculture and life.\n- Patron of farmers.\n- Symbol of renewal."
+  },
+  {
+    "id": "god-cyric",
+    "title": "Cyric (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "death",
+      "trickery"
+    ],
+    "body": "Cyric, the **Prince of Lies**, god of murder, lies, and strife.\n- Sows chaos and betrayal.\n- Enemy of nearly all other gods."
+  },
+  {
+    "id": "god-deneir",
+    "title": "Deneir (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "knowledge"
+    ],
+    "body": "Deneir, the **Lord of All Glyphs & Images**, god of writing and literacy.\n- Patron of scribes and cartographers.\n- Seeks to record all knowledge."
+  },
+  {
+    "id": "god-eldath",
+    "title": "Eldath (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "life",
+      "peace"
+    ],
+    "body": "Eldath, the **Quiet One**, goddess of peace and still waters.\n- Patron of pacifists and sacred groves.\n- Opposes needless bloodshed."
+  },
+  {
+    "id": "god-gargauth",
+    "title": "Gargauth (Demigod)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "trickery",
+      "betrayal"
+    ],
+    "body": "Gargauth, the **Hidden Lord**, corrupted demigod of treachery and corruption.\n- Seduces cities into tyranny.\n- Often bound in cursed artifacts."
+  },
+  {
+    "id": "god-ghaunadaur",
+    "title": "Ghaunadaur (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "ooze",
+      "madness"
+    ],
+    "body": "Ghaunadaur, **That Which Lurks**, patron of oozes and outcasts among drow.\n- Hungers for dissolution.\n- Alien devotion."
+  },
+  {
+    "id": "god-gond",
+    "title": "Gond (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "knowledge",
+      "craft"
+    ],
+    "body": "Gond, the **Wonderbringer**, god of craft and invention.\n- Patron of artisans and tinkerers.\n- Encourages innovation and devices."
+  },
+  {
+    "id": "god-helm",
+    "title": "Helm (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-neutral",
+      "protection"
+    ],
+    "body": "Helm, the **Vigilant One**, god of guardians and protection.\n- Patron of sentinels and watchmen.\n- Embodies duty and vigilance."
+  },
+  {
+    "id": "god-hoar",
+    "title": "Hoar (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-neutral",
+      "vengeance"
+    ],
+    "body": "Hoar, the **Doombringer**, god of poetic justice and vengeance.\n- Patron of duels and retribution.\n- Balances grievance and punishment."
+  },
+  {
+    "id": "god-ilmater",
+    "title": "Ilmater (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "life"
+    ],
+    "body": "Ilmater, the **Crying God**, patron of endurance and compassion.\n- Comforts the suffering.\n- Encourages mercy and sacrifice."
+  },
+  {
+    "id": "god-jergal",
+    "title": "Jergal (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "death",
+      "records"
+    ],
+    "body": "Jergal, the **Scribe of the Doomed**, keeps the records of the dead.\n- Servant-ally of Kelemvor.\n- Detached, meticulous chronicler."
+  },
+  {
+    "id": "god-kelemvor",
+    "title": "Kelemvor (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-neutral",
+      "death"
+    ],
+    "body": "Kelemvor, the **Lord of the Dead**, judges mortal souls.\n- Patron of funerary rites.\n- Upholds fairness in death."
+  },
+  {
+    "id": "god-lathander",
+    "title": "Lathander (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "life",
+      "light"
+    ],
+    "body": "Lathander, the **Morninglord**, god of dawn and renewal.\n- Patron of creativity and births.\n- Symbol of new beginnings."
+  },
+  {
+    "id": "god-leira",
+    "title": "Leira (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-neutral",
+      "trickery",
+      "illusion"
+    ],
+    "body": "Leira, **Lady of the Mists**, goddess of illusion and mystery.\n- Patron of secrets and misdirection.\n- Elusive and unpredictable."
+  },
+  {
+    "id": "god-lliira",
+    "title": "Lliira (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "life",
+      "joy"
+    ],
+    "body": "Lliira, **Lady of Joy**, goddess of festivals and celebration.\n- Patron of dancers and revels.\n- Opposes tyranny and sorrow."
+  },
+  {
+    "id": "god-loviatar",
+    "title": "Loviatar (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "pain"
+    ],
+    "body": "Loviatar, the **Maiden of Pain**, revels in agony and discipline.\n- Patron of torturers and flagellants.\n- Teaches strength through suffering."
+  },
+  {
+    "id": "god-malar",
+    "title": "Malar (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "nature",
+      "hunt"
+    ],
+    "body": "Malar, the **Beastlord**, god of the savage hunt.\n- Patron of predators and bloodsport.\n- Thrives on the kill."
+  },
+  {
+    "id": "god-mask",
+    "title": "Mask (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-evil",
+      "trickery",
+      "shadows"
+    ],
+    "body": "Mask, the **Lord of Shadows**, patron of thieves.\n- Embodies stealth and secrecy.\n- Fickle ally, elusive foe."
+  },
+  {
+    "id": "god-milil",
+    "title": "Milil (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "knowledge",
+      "song"
+    ],
+    "body": "Milil, the **Lord of Song**, patron of poetry and music.\n- Inspires bards and artists.\n- Celebrates beauty of performance."
+  },
+  {
+    "id": "god-myrkul",
+    "title": "Myrkul (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-evil",
+      "death",
+      "decay"
+    ],
+    "body": "Myrkul, the **Lord of Bones**, ancient god of death and memory of the dead.\n- Haunts tombs and catacombs.\n- Fearful whisper in the dark."
+  },
+  {
+    "id": "god-mystra",
+    "title": "Mystra (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "arcana"
+    ],
+    "body": "Mystra, the **Lady of Mysteries**, goddess of magic and the Weave.\n- Patron of spellcasters.\n- Embodies arcane balance."
+  },
+  {
+    "id": "god-oghma",
+    "title": "Oghma (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "knowledge"
+    ],
+    "body": "Oghma, the **Binder of What is Known**, god of knowledge and inspiration.\n- Patron of sages and inventors.\n- Seeks to spread ideas."
+  },
+  {
+    "id": "god-red-knight",
+    "title": "Red Knight (Demigod)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-neutral",
+      "war",
+      "strategy"
+    ],
+    "body": "The Red Knight, **Lady of Strategy**, patron of tactics and planning.\n- Advisor to Tempus.\n- Values discipline and foresight."
+  },
+  {
+    "id": "god-savras",
+    "title": "Savras (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-neutral",
+      "divination",
+      "fate"
+    ],
+    "body": "Savras, **All-Seeing**, god of divination and fate.\n- Patron of oracles and auguries.\n- Veils parted."
+  },
+  {
+    "id": "god-selune",
+    "title": "Selûne (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "life",
+      "light"
+    ],
+    "body": "Selûne, the **Moonmaiden**, goddess of the moon and navigation.\n- Patron of wanderers and sailors.\n- Eternal rival of Shar."
+  },
+  {
+    "id": "god-shar",
+    "title": "Shar (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-evil",
+      "darkness"
+    ],
+    "body": "Shar, the **Mistress of the Night**, embodies loss and secrets.\n- Keeper of hidden knowledge.\n- Opposes Selûne."
+  },
+  {
+    "id": "god-shaundakul",
+    "title": "Shaundakul (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-neutral",
+      "travel",
+      "wind"
+    ],
+    "body": "Shaundakul, **Rider of the Winds**, god of exploration and portals.\n- Patron of travelers and traders.\n- Embraces new horizons."
+  },
+  {
+    "id": "god-silvanus",
+    "title": "Silvanus (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "nature"
+    ],
+    "body": "Silvanus, the **Oak Father**, god of the wilds and natural balance.\n- Patron of druids.\n- Balance of growth and decay."
+  },
+  {
+    "id": "god-sune",
+    "title": "Sune (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "love",
+      "beauty"
+    ],
+    "body": "Sune, the **Lady of Love**, goddess of beauty and passion.\n- Patron of artists and lovers.\n- Celebrates romance and art."
+  },
+  {
+    "id": "god-talona",
+    "title": "Talona (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "poison",
+      "disease"
+    ],
+    "body": "Talona, **Lady of Poison**, spreads disease and venom.\n- Patron of assassins and apothecaries.\n- Feared in cities and wilds."
+  },
+  {
+    "id": "god-talos",
+    "title": "Talos (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "storm",
+      "destruction"
+    ],
+    "body": "Talos, the **Stormlord**, god of storms and destruction.\n- Patron of raiders and tempests.\n- Wreaks havoc upon coasts."
+  },
+  {
+    "id": "god-tempus",
+    "title": "Tempus (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "war"
+    ],
+    "body": "Tempus, the **Lord of Battles**, governs war and combat.\n- Patron of soldiers and generals.\n- Honors valor over victory."
+  },
+  {
+    "id": "god-torm",
+    "title": "Torm (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "courage",
+      "duty"
+    ],
+    "body": "Torm, the **Loyal Fury**, god of duty and righteousness.\n- Patron of paladins.\n- Selfless courage and service."
+  },
+  {
+    "id": "god-tymora",
+    "title": "Tymora (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "luck"
+    ],
+    "body": "Tymora, **Lady Luck**, goddess of good fortune.\n- Patron of adventurers and gamblers.\n- Twin/rival of Beshaba."
+  },
+  {
+    "id": "god-tyr",
+    "title": "Tyr (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "justice",
+      "law"
+    ],
+    "body": "Tyr, the **Maimed God**, embodies justice and law.\n- Patron of judges and rulers.\n- Sacrificed his hand to duty."
+  },
+  {
+    "id": "god-umberlee",
+    "title": "Umberlee (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "sea",
+      "storm"
+    ],
+    "body": "Umberlee, the **Bitch Queen**, goddess of the sea and shipwrecks.\n- Patron (and terror) of sailors.\n- Demands offerings for safe passage."
+  },
+  {
+    "id": "god-waukeen",
+    "title": "Waukeen (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "trade",
+      "wealth"
+    ],
+    "body": "Waukeen, the **Merchant's Friend**, goddess of trade and wealth.\n- Patron of markets and coin.\n- Encourages enterprise."
+  },
+  {
+    "id": "god-akadi",
+    "title": "Akadi (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "air",
+      "elemental"
+    ],
+    "body": "Akadi, **Queen of Air**, elemental deity of freedom and movement.\n- Patron of fliers and free spirits.\n- Ever-changing winds."
+  },
+  {
+    "id": "god-grumbar",
+    "title": "Grumbar (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "earth",
+      "elemental"
+    ],
+    "body": "Grumbar, **King of Earth**, elemental stability and endurance.\n- Patron of miners and delvers.\n- Unyielding bedrock."
+  },
+  {
+    "id": "god-istishia",
+    "title": "Istishia (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "water",
+      "elemental"
+    ],
+    "body": "Istishia, **Prince of Water**, elemental change and cycles.\n- Patron of swimmers and sailors.\n- Tides and currents eternal."
+  },
+  {
+    "id": "god-kossuth",
+    "title": "Kossuth (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "fire",
+      "elemental"
+    ],
+    "body": "Kossuth, **Lord of Flames**, elemental fire and purification.\n- Patron of firewalkers and forges.\n- Trial by flame."
+  },
+  {
+    "id": "god-uthgar",
+    "title": "Uthgar (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "war",
+      "totems"
+    ],
+    "body": "Uthgar, **Father of the Uthgardt**, ancestor god of totem tribes.\n- Patron of clan totems and rites.\n- Strength through trials."
+  },
+  {
+    "id": "god-valkur",
+    "title": "Valkur (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "sea",
+      "travel"
+    ],
+    "body": "Valkur, **The Mighty**, patron of sailors' luck and fair winds.\n- Opposes Umberlee's cruelty.\n- Adventurous, bold spirit."
+  },
+  {
+    "id": "god-finder-wyvernspur",
+    "title": "Finder Wyvernspur (Demigod)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-neutral",
+      "inspiration"
+    ],
+    "body": "Finder Wyvernspur, **Nameless Bard Ascendant**, demipower of invention in art.\n- Patron of experimental artists.\n- Reinvention and renewal."
+  },
+  {
+    "id": "god-moradin",
+    "title": "Moradin (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "forge",
+      "creation"
+    ],
+    "body": "Moradin, the **Soul Forger**, chief dwarf god of craft and creation.\n- Patron of smiths and clan founders.\n- Upholds tradition and toil."
+  },
+  {
+    "id": "god-berronar-truesilver",
+    "title": "Berronar Truesilver (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "life",
+      "home"
+    ],
+    "body": "Berronar Truesilver, **Mother of Safety**, hearth and marriage.\n- Patron of healers and keepers.\n- Oaths and family."
+  },
+  {
+    "id": "god-clangeddin-silverbeard",
+    "title": "Clangeddin Silverbeard (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "war"
+    ],
+    "body": "Clangeddin Silverbeard, **Father of Battle**, dwarven valor.\n- Patron of warriors.\n- Glory through honorable combat."
+  },
+  {
+    "id": "god-dugmaren-brightmantle",
+    "title": "Dugmaren Brightmantle (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "knowledge"
+    ],
+    "body": "Dugmaren Brightmantle, **Wanderer of Wonder**, curiosity and discovery.\n- Patron of scholars and explorers.\n- Open-minded learning."
+  },
+  {
+    "id": "god-dumathoin",
+    "title": "Dumathoin (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "earth",
+      "secrets"
+    ],
+    "body": "Dumathoin, **Keeper of Secrets Under the Mountain**, mines and buried lore.\n- Patron of miners and gemcutters.\n- Silent guardian of the deep."
+  },
+  {
+    "id": "god-gorm-gulthyn",
+    "title": "Gorm Gulthyn (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "protection"
+    ],
+    "body": "Gorm Gulthyn, **Fire Eyes**, vigilant defense of dwarven holds.\n- Patron of sentries.\n- Eternal watch."
+  },
+  {
+    "id": "god-haela-brightaxe",
+    "title": "Haela Brightaxe (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "war",
+      "luck"
+    ],
+    "body": "Haela Brightaxe, **Lady of the Fray**, luck in battle.\n- Patron of bold strikes.\n- Joy in combat."
+  },
+  {
+    "id": "god-marthammor-duin",
+    "title": "Marthammor Duin (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "travel"
+    ],
+    "body": "Marthammor Duin, **The Finder of Trails**, travelers and scouts.\n- Patron of pathfinders.\n- Bridges dwarf and surface."
+  },
+  {
+    "id": "god-sharindlar",
+    "title": "Sharindlar (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "life",
+      "healing"
+    ],
+    "body": "Sharindlar, **Lady of Life and Mercy**, healing and romance.\n- Patron of midwives and dancers.\n- Festivals of renewal."
+  },
+  {
+    "id": "god-thard-harr",
+    "title": "Thard Harr (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-neutral",
+      "nature"
+    ],
+    "body": "Thard Harr, **Jungle Lord**, wild dwarves and hunts.\n- Patron of Chult dwarves.\n- Primal rites."
+  },
+  {
+    "id": "god-vergadain",
+    "title": "Vergadain (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "trade",
+      "luck"
+    ],
+    "body": "Vergadain, **Merchant King**, wealth and cunning deals.\n- Patron of traders and rogues.\n- Golden opportunity."
+  },
+  {
+    "id": "god-corellon-larethian",
+    "title": "Corellon Larethian (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "light",
+      "art"
+    ],
+    "body": "Corellon Larethian, **First of the Seldarine**, art, magic, and warfare.\n- Patron of elves and creators.\n- Grace and change."
+  },
+  {
+    "id": "god-sehanine-moonbow",
+    "title": "Sehanine Moonbow (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "moon",
+      "dreams"
+    ],
+    "body": "Sehanine Moonbow, **Lunar Lady**, dreams and mysteries.\n- Patron of transitions and journeys.\n- Moonlit secrets."
+  },
+  {
+    "id": "god-aerdrie-faenya",
+    "title": "Aerdrie Faenya (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "air",
+      "weather"
+    ],
+    "body": "Aerdrie Faenya, **Lady of the Winds**, aerial freedom.\n- Patron of fliers and sky elves.\n- Storm-kissed joy."
+  },
+  {
+    "id": "god-angharradh",
+    "title": "Angharradh (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "protection",
+      "unity"
+    ],
+    "body": "Angharradh, **Triune Queen**, aspect of elven unity.\n- Patron of resilience.\n- Triple-aspected goddess."
+  },
+  {
+    "id": "god-hanali-celanil",
+    "title": "Hanali Celanil (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "love",
+      "beauty"
+    ],
+    "body": "Hanali Celanil, **Heart of Gold**, elven love and beauty.\n- Patron of romance and art.\n- Rosy delight."
+  },
+  {
+    "id": "god-labelas-enoreth",
+    "title": "Labelas Enoreth (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "time",
+      "knowledge"
+    ],
+    "body": "Labelas Enoreth, **The Lifegiver**, time, history, and wisdom.\n- Patron of longevity and lore.\n- Perspective of ages."
+  },
+  {
+    "id": "god-rillifane-rallathil",
+    "title": "Rillifane Rallathil (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "nature"
+    ],
+    "body": "Rillifane Rallathil, **Leaflord**, forests and renewal.\n- Patron of treefolk and druids.\n- Canopy's shelter."
+  },
+  {
+    "id": "god-solonor-thelandira",
+    "title": "Solonor Thelandira (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "hunt"
+    ],
+    "body": "Solonor Thelandira, **Keen Eye**, archery and the hunt.\n- Patron of rangers.\n- Silent arrow."
+  },
+  {
+    "id": "god-deep-sashelas",
+    "title": "Deep Sashelas (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "sea"
+    ],
+    "body": "Deep Sashelas, **Sea Father**, sea elves and oceans.\n- Patron of reef craft and song.\n- Tides of life."
+  },
+  {
+    "id": "god-fenmarel-mestarine",
+    "title": "Fenmarel Mestarine (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-neutral",
+      "isolation"
+    ],
+    "body": "Fenmarel Mestarine, **Lone Wolf**, outcast elves.\n- Patron of the forgotten.\n- Solitude as shield."
+  },
+  {
+    "id": "god-erevan-ilesere",
+    "title": "Erevan Ilesere (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-neutral",
+      "trickery"
+    ],
+    "body": "Erevan Ilesere, **The Trickster**, mischief and change.\n- Patron of pranksters.\n- Coin of chance."
+  },
+  {
+    "id": "god-shevarash",
+    "title": "Shevarash (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-neutral",
+      "vengeance"
+    ],
+    "body": "Shevarash, **Black Archer**, vengeance against drow.\n- Patron of oathbound archers.\n- Grudges in shadow."
+  },
+  {
+    "id": "god-vandria-gilmadrith",
+    "title": "Vandria Gilmadrith (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-neutral",
+      "war",
+      "duty"
+    ],
+    "body": "Vandria Gilmadrith, **War Matron**, discipline and resolve.\n- Patron of strategists.\n- Somber duty."
+  },
+  {
+    "id": "god-lolth",
+    "title": "Lolth (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "trickery",
+      "spiders"
+    ],
+    "body": "Lolth, the **Queen of Spiders**, ruthless patron of the drow.\n- Chaos, cruelty, and webs of power.\n- Demands absolute obedience."
+  },
+  {
+    "id": "god-vhaeraun",
+    "title": "Vhaeraun (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "trickery",
+      "thieves"
+    ],
+    "body": "Vhaeraun, **Mask of the Drow**, thievery and rebellion.\n- Patron of surface-returning drow.\n- Rival to Lolth."
+  },
+  {
+    "id": "god-eilistraee",
+    "title": "Eilistraee (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "moon",
+      "redemption"
+    ],
+    "body": "Eilistraee, **Dark Dancer**, redemption for the drow.\n- Patron of song and the moonlit road.\n- Hope against Lolth's tyranny."
+  },
+  {
+    "id": "god-kiaransalee",
+    "title": "Kiaransalee (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "undeath",
+      "vengeance"
+    ],
+    "body": "Kiaransalee, **Lady of the Dead**, undeath and revenge.\n- Patron of necromancy.\n- Names whispered in hate."
+  },
+  {
+    "id": "god-selvetarm",
+    "title": "Selvetarm (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "war"
+    ],
+    "body": "Selvetarm, **Champion of Lolth**, embattled drow war-god.\n- Patron of endless conflict.\n- Consumed by rage."
+  },
+  {
+    "id": "god-yondalla",
+    "title": "Yondalla (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "life",
+      "protection"
+    ],
+    "body": "Yondalla, **The Protector and Provider**, chief halfling goddess.\n- Patron of families and plenty.\n- Round-hearted wisdom."
+  },
+  {
+    "id": "god-arvoreen",
+    "title": "Arvoreen (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "protection",
+      "war"
+    ],
+    "body": "Arvoreen, **The Defender**, vigilance and readiness.\n- Patron of shires' militias.\n- Shields high."
+  },
+  {
+    "id": "god-cyrrollalee",
+    "title": "Cyrrollalee (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "home",
+      "hospitality"
+    ],
+    "body": "Cyrrollalee, **Heart of the Hearth**, hospitality and trust.\n- Patron of hosts.\n- Welcome and warmth."
+  },
+  {
+    "id": "god-sheela-peryroyl",
+    "title": "Sheela Peryroyl (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "nature",
+      "agriculture"
+    ],
+    "body": "Sheela Peryroyl, **Green Sister**, crops and gardens.\n- Patron of planters and cooks.\n- Harmony with the land."
+  },
+  {
+    "id": "god-brandobaris",
+    "title": "Brandobaris (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-neutral",
+      "trickery"
+    ],
+    "body": "Brandobaris, **Master of Stealth**, luck and adventure.\n- Patron of wanderers and rogues.\n- Quick fingers, quicker feet."
+  },
+  {
+    "id": "god-urogalan",
+    "title": "Urogalan (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "death",
+      "earth"
+    ],
+    "body": "Urogalan, **The Black Hound**, halfling dead and earth.\n- Patron of burial customs.\n- Quiet remembrance."
+  },
+  {
+    "id": "god-garl-glittergold",
+    "title": "Garl Glittergold (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "trickery",
+      "protection"
+    ],
+    "body": "Garl Glittergold, **Joker of Gems**, chief gnome deity.\n- Patron of humor and wisdom.\n- Pranks with purpose."
+  },
+  {
+    "id": "god-baervan-wildwanderer",
+    "title": "Baervan Wildwanderer (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "nature",
+      "travel"
+    ],
+    "body": "Baervan Wildwanderer, **Forest Friend**, wanderlust and beasts.\n- Patron of scouts.\n- Companionship of Chiktikka Fastpaws."
+  },
+  {
+    "id": "god-baravar-cloakshadow",
+    "title": "Baravar Cloakshadow (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "trickery",
+      "illusion"
+    ],
+    "body": "Baravar Cloakshadow, **Hidden Master**, illusions and wards.\n- Patron of clever defenses.\n- Subtlety over force."
+  },
+  {
+    "id": "god-flandal-steelskin",
+    "title": "Flandal Steelskin (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "forge",
+      "craft"
+    ],
+    "body": "Flandal Steelskin, **Master of Metal**, smithing and fire.\n- Patron of smiths and miners.\n- Tempered resilience."
+  },
+  {
+    "id": "god-gaerdal-ironhand",
+    "title": "Gaerdal Ironhand (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "protection",
+      "discipline"
+    ],
+    "body": "Gaerdal Ironhand, **Stern Watcher**, vigilance and drill.\n- Patron of shield patrols.\n- Duty before mirth."
+  },
+  {
+    "id": "god-segojan-earthcaller",
+    "title": "Segojan Earthcaller (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "earth",
+      "nature"
+    ],
+    "body": "Segojan Earthcaller, **Digger of Roots**, burrows and earth's bounty.\n- Patron of rock gnomes.\n- Whisper of stone."
+  },
+  {
+    "id": "god-urdlen",
+    "title": "Urdlen (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "madness",
+      "destruction"
+    ],
+    "body": "Urdlen, **The Crawler Below**, gnome bogey-deity of mindless ruin.\n- Patron of burrowing dread.\n- Pale, endless hunger."
+  },
+  {
+    "id": "god-gruumsh",
+    "title": "Gruumsh (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "war",
+      "domination"
+    ],
+    "body": "Gruumsh, **One-Eye**, chief orc god of conquest.\n- Patron of warbands.\n- Eternal hatred of elves."
+  },
+  {
+    "id": "god-bahgtru",
+    "title": "Bahgtru (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "strength"
+    ],
+    "body": "Bahgtru, **Leg-Breaker**, brute strength and obedience.\n- Patron of enforcers.\n- Favors might over cunning."
+  },
+  {
+    "id": "god-ilneval",
+    "title": "Ilneval (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "war",
+      "tactics"
+    ],
+    "body": "Ilneval, **War Master**, strategy and command.\n- Patron of lieutenants.\n- Ambition on the march."
+  },
+  {
+    "id": "god-luthic",
+    "title": "Luthic (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "life",
+      "caves"
+    ],
+    "body": "Luthic, **Cave Mother**, endurance and fecundity.\n- Patron of hearth-caves.\n- Claws that heal and harm."
+  },
+  {
+    "id": "god-shargaas",
+    "title": "Shargaas (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "darkness",
+      "stealth"
+    ],
+    "body": "Shargaas, **Night Lord**, shadows and terror.\n- Patron of assassins.\n- Nighted dread."
+  },
+  {
+    "id": "god-yurtrus",
+    "title": "Yurtrus (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-evil",
+      "death",
+      "disease"
+    ],
+    "body": "Yurtrus, **White Hand**, death and plague among orcs.\n- Patron of shamans.\n- Silent and shunned."
+  },
+  {
+    "id": "god-maglubiyet",
+    "title": "Maglubiyet (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "war",
+      "domination"
+    ],
+    "body": "Maglubiyet, **High Chieftain**, ruler of goblinoid pantheon.\n- Patron of conquest.\n- Demands obedience."
+  },
+  {
+    "id": "god-khurgorbaeyag",
+    "title": "Khurgorbaeyag (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "slavery"
+    ],
+    "body": "Khurgorbaeyag, **Taskmaster**, goblin slavery and control.\n- Patron of overseers.\n- Chains and whips."
+  },
+  {
+    "id": "god-nomog-geaya",
+    "title": "Nomog-Geaya (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "war",
+      "discipline"
+    ],
+    "body": "Nomog-Geaya, **Iron Warrior**, hobgoblin discipline.\n- Patron of legions.\n- Law of the lash."
+  },
+  {
+    "id": "god-bargrivyek",
+    "title": "Bargrivyek (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "order",
+      "mediation"
+    ],
+    "body": "Bargrivyek, **Mediator**, hobgoblin order and ceasefires.\n- Patron of diplomats.\n- Peace for advantage."
+  },
+  {
+    "id": "god-hruggek",
+    "title": "Hruggek (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "war",
+      "ambush"
+    ],
+    "body": "Hruggek, **Bugbear Fury**, ambush and ferocity.\n- Patron of raiders.\n- Skulls for trophies."
+  },
+  {
+    "id": "god-grankhul",
+    "title": "Grankhul (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "stealth"
+    ],
+    "body": "Grankhul, **The Sneak**, bugbear stealth and cunning.\n- Patron of scouts.\n- Eyes in the dark."
+  },
+  {
+    "id": "god-skiggaret",
+    "title": "Skiggaret (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "madness",
+      "fear"
+    ],
+    "body": "Skiggaret, **The Deranger**, bugbear panic and insanity.\n- Patron of terror.\n- Screams in the night."
+  },
+  {
+    "id": "god-annam-the-all-father",
+    "title": "Annam the All-Father (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "creation",
+      "giants"
+    ],
+    "body": "Annam, **All-Father**, creator of giantkind and the Ordning.\n- Patron of legacy and might.\n- Remote, world-shaping will."
+  },
+  {
+    "id": "god-stronmaus",
+    "title": "Stronmaus (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "storm"
+    ],
+    "body": "Stronmaus, **Storm Lord**, jovial cloud/storm giant deity.\n- Patron of generosity.\n- Thunderous mirth."
+  },
+  {
+    "id": "god-hiatea",
+    "title": "Hiatea (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "hunt",
+      "fire"
+    ],
+    "body": "Hiatea, **Huntress and Hearthfire**, giantess of family and chase.\n- Patron of growth and skill.\n- Spear and flame."
+  },
+  {
+    "id": "god-skoraeus-stonebones",
+    "title": "Skoraeus Stonebones (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "earth",
+      "art"
+    ],
+    "body": "Skoraeus Stonebones, **Silent Sage**, stone giant art and lore.\n- Patron of sculptors.\n- Stillness of stone."
+  },
+  {
+    "id": "god-surtur",
+    "title": "Surtur (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "fire",
+      "forge"
+    ],
+    "body": "Surtur, **Lord of the Forge**, fire giant craft and conquest.\n- Patron of smith-kings.\n- Crown of flame."
+  },
+  {
+    "id": "god-thrym",
+    "title": "Thrym (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "frost",
+      "war"
+    ],
+    "body": "Thrym, **Ice Jarl**, frost giant ferocity and winter's crown.\n- Patron of raids and glaciers.\n- Evercold ambition."
+  },
+  {
+    "id": "god-grolantor",
+    "title": "Grolantor (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "gluttony",
+      "giants"
+    ],
+    "body": "Grolantor, **The Ruiner**, hill giant hunger and brute dominance.\n- Patron of the biggest and hungriest.\n- Bulging appetite."
+  },
+  {
+    "id": "god-memnor",
+    "title": "Memnor (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-evil",
+      "trickery",
+      "pride"
+    ],
+    "body": "Memnor, **Golden Deceiver**, cloud giant pride and guile.\n- Patron of schemers.\n- Honeyed lies."
+  },
+  {
+    "id": "god-horus-re",
+    "title": "Horus-Re (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "sun",
+      "war"
+    ],
+    "body": "Horus-Re, **Falcon of the Sun**, rulership and righteous war.\n- Patron of pharaohs.\n- Triumph of light."
+  },
+  {
+    "id": "god-isis",
+    "title": "Isis (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "magic",
+      "life"
+    ],
+    "body": "Isis, **Lady of Enchantment**, magic, motherhood, and healing.\n- Patron of protection.\n- Wise and kind."
+  },
+  {
+    "id": "god-osiris",
+    "title": "Osiris (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "death",
+      "rebirth"
+    ],
+    "body": "Osiris, **Lord of Eternity**, death, rebirth, and judgement.\n- Patron of afterlife rites.\n- Green of renewal."
+  },
+  {
+    "id": "god-set",
+    "title": "Set (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "trickery",
+      "desert"
+    ],
+    "body": "Set, **Lord of the Red Lands**, deceit and desert storms.\n- Patron of serpents.\n- Treachery enthroned."
+  },
+  {
+    "id": "god-thoth",
+    "title": "Thoth (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "knowledge",
+      "magic"
+    ],
+    "body": "Thoth, **Ibis of Wisdom**, knowledge and measured magic.\n- Patron of scribes.\n- Balance in thought."
+  },
+  {
+    "id": "god-anhur",
+    "title": "Anhur (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "war"
+    ],
+    "body": "Anhur, **Champion of the Gods**, war and courage.\n- Patron of soldiers.\n- Lion's roar."
+  },
+  {
+    "id": "god-nephthys",
+    "title": "Nephthys (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "protection",
+      "mourning"
+    ],
+    "body": "Nephthys, **Friend of the Dead**, protection and funerary care.\n- Patron of mourners.\n- Night's comfort."
+  },
+  {
+    "id": "god-geb",
+    "title": "Geb (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "earth"
+    ],
+    "body": "Geb, **Earthshaker**, soil and fertility.\n- Patron of farmers.\n- Grounded bounty."
+  },
+  {
+    "id": "god-hathor",
+    "title": "Hathor (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "love",
+      "joy"
+    ],
+    "body": "Hathor, **Lady of Music**, love, joy, and festivity.\n- Patron of art and dance.\n- Golden embrace."
+  },
+  {
+    "id": "god-bes",
+    "title": "Bes (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-good",
+      "protection",
+      "households"
+    ],
+    "body": "Bes, **Household Guardian**, joy and warding against evil.\n- Patron of families and births.\n- Fierce smile."
+  },
+  {
+    "id": "god-gilgeam",
+    "title": "Gilgeam (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "war",
+      "kingship"
+    ],
+    "body": "Gilgeam, **God-King of Unther**, tyranny and martial rule.\n- Patron of imperial pride.\n- Iron diadem."
+  },
+  {
+    "id": "god-tiamat",
+    "title": "Tiamat (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "dragons",
+      "greed"
+    ],
+    "body": "Tiamat, **Dragon Queen**, fivefold wrath and hoarded wealth.\n- Patron of chromatic dragons.\n- Dominion through fear."
+  },
+  {
+    "id": "god-ramman",
+    "title": "Ramman (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-neutral",
+      "storm",
+      "war"
+    ],
+    "body": "Ramman, **The Thunderer**, storms and reckless war.\n- Patron of berserkers.\n- Crash of thunder."
+  },
+  {
+    "id": "god-ishtar",
+    "title": "Ishtar (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "love",
+      "war"
+    ],
+    "body": "Ishtar, **Queen of Heaven**, love and just warfare.\n- Patron of passion and valor.\n- Star-crowned."
+  },
+  {
+    "id": "god-nergal",
+    "title": "Nergal (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-evil",
+      "death",
+      "plague"
+    ],
+    "body": "Nergal, **Prince of Pestilence**, death and disease.\n- Patron of funerary fires.\n- Scorching doom."
+  },
+  {
+    "id": "god-ubtao",
+    "title": "Ubtao (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "creation",
+      "maztica",
+      "chult"
+    ],
+    "body": "Ubtao, **Father of Dinosaurs**, creator-patron of Chult.\n- Patron of maze trials.\n- Withdrawn but watchful."
+  },
+  {
+    "id": "god-qotal",
+    "title": "Qotal (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "feathered-serpent",
+      "life"
+    ],
+    "body": "Qotal, **Feathered Serpent**, Maztican life and harmony.\n- Patron of mercy and crops.\n- Opposes Zaltec."
+  },
+  {
+    "id": "god-zaltec",
+    "title": "Zaltec (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "war",
+      "sacrifice"
+    ],
+    "body": "Zaltec, **Obsidian Hummingbird**, blood sacrifice and war.\n- Patron of cruel rites.\n- Dark sun of hunger."
+  },
+  {
+    "id": "god-azul",
+    "title": "Azul (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "rain"
+    ],
+    "body": "Azul, **Rainbringer**, Maztican rains and water.\n- Patron of wells and lakes.\n- Thirst slaked."
+  },
+  {
+    "id": "god-tezca",
+    "title": "Tezca (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "sun",
+      "heat"
+    ],
+    "body": "Tezca, **Burning Sun**, scorching light and trials.\n- Patron of the noon blaze.\n- Purging heat."
+  },
+  {
+    "id": "god-bahamut",
+    "title": "Bahamut (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-good",
+      "dragons",
+      "justice"
+    ],
+    "body": "Bahamut, **Platinum Dragon**, justice and protection.\n- Patron of metallic dragons and paladins.\n- Mercy with majesty."
+  },
+  {
+    "id": "god-kurtulmak",
+    "title": "Kurtulmak (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "trickery",
+      "kobolds"
+    ],
+    "body": "Kurtulmak, **Hoard-Hunter**, kobold trapcraft and spite.\n- Patron of tunnels and traps.\n- Bitter cunning."
+  },
+  {
+    "id": "god-semuanya",
+    "title": "Semuanya (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral",
+      "survival",
+      "lizardfolk"
+    ],
+    "body": "Semuanya, **Cold Blood's Pulse**, survival and fecundity.\n- Patron of lizardfolk.\n- Practical endurance."
+  },
+  {
+    "id": "god-sseth",
+    "title": "Sseth (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "serpents",
+      "yuan-ti"
+    ],
+    "body": "Sseth (Merrshaulk), **Night Serpent**, yuan-ti dominion.\n- Patron of coils and plots.\n- Subtle venom."
+  },
+  {
+    "id": "god-ilsensine",
+    "title": "Ilsensine (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "mind",
+      "illithid"
+    ],
+    "body": "Ilsensine, **Brain of God**, illithid supremacy and psionics.\n- Patron of elder brains.\n- Cold intellect."
+  },
+  {
+    "id": "god-great-mother",
+    "title": "Great Mother (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "beholders",
+      "madness"
+    ],
+    "body": "The Great Mother, **Eye of Nightmares**, beholder genesis and insanity.\n- Patron of aberrant visions.\n- Ever-spawning eyes."
+  },
+  {
+    "id": "god-vaprak",
+    "title": "Vaprak (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "ogres",
+      "trolls"
+    ],
+    "body": "Vaprak, **The Destroyer**, ogres and trolls.\n- Patron of rampage.\n- Flesh that rends."
+  },
+  {
+    "id": "god-yeenoghu",
+    "title": "Yeenoghu (Demon Lord)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "gnolls",
+      "savagery"
+    ],
+    "body": "Yeenoghu, **Demon Lord of Gnolls**, worshiped as a deity by gnolls.\n- Patron of ravening packs.\n- Endless hunger."
+  },
+  {
+    "id": "god-laduguer",
+    "title": "Laduguer (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "forge",
+      "duergar"
+    ],
+    "body": "Laduguer, **Exile Smith**, duergar toil and craft.\n- Patron of grim industry.\n- Bitter endurance."
+  },
+  {
+    "id": "god-deep-duerra",
+    "title": "Deep Duerra (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "lawful-evil",
+      "psionics",
+      "duergar"
+    ],
+    "body": "Deep Duerra, **Queen of Conquest**, duergar psionics and domination.\n- Patron of iron minds.\n- Silent conquest."
+  },
+  {
+    "id": "god-diirinka",
+    "title": "Diirinka (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-neutral",
+      "trickery",
+      "derro"
+    ],
+    "body": "Diirinka, **Mad Savant**, derro deceit and strange magic.\n- Patron of deranged inspiration.\n- Dangerous genius."
+  },
+  {
+    "id": "god-diinkarazan",
+    "title": "Diinkarazan (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "chaotic-evil",
+      "madness",
+      "derro"
+    ],
+    "body": "Diinkarazan, **The Lost**, derro madness and wandering.\n- Patron of broken minds.\n- Whispers without end."
+  },
+  {
+    "id": "god-gwaeron-windstrom",
+    "title": "Gwaeron Windstrom (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "nature",
+      "tracking"
+    ],
+    "body": "Gwaeron Windstrom, **Master of Tracking**, ranger-lore and beasts.\n- Patron of the North's paths.\n- Scent on the wind."
+  },
+  {
+    "id": "god-shiallia",
+    "title": "Shiallia (God)",
+    "type": "god",
+    "tags": [
+      "gods",
+      "neutral-good",
+      "life",
+      "fertility"
+    ],
+    "body": "Shiallia, **Dancer in the Glades**, fertility and forest joy.\n- Patron of sprites and midwives.\n- Laughter under leaves."
+  }
+]

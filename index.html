@@ -82,20 +82,29 @@
       <!-- Results + Reader -->
       <div class="md:col-span-2 grid gap-4">
         <article id="reader" class="card card-pad prose prose-slate max-w-none dark:prose-invert">
-          <h2 class="m-0">Welcome 👋</h2>
-          <p>Select a note, or press <span class="kbd">⌘/Ctrl</span> + <span class="kbd">K</span> to search. This is your lightweight, single-file DM wiki for <em>Storm King's Thunder</em>.</p>
-          <hr />
-          <pre class="text-xs bg-slate-50 p-3 rounded-lg overflow-auto"><code>Repo idea
-├── index.html              # this file
-├── app.js                  # app logic
-├── styles.css              # custom styles
-├── /notes/ (optional)      # if you split notes later
-│   ├── sessions/
-│   ├── npcs/
-│   ├── locations/
-│   ├── rules/
-│   └── factions/
-└── README.md</code></pre>
+          <div id="readerHeader" class="flex items-center justify-between bg-yellow-100 dark:bg-yellow-900 p-2 rounded">
+            <h2 id="readerTitle" class="m-0">Welcome 👋</h2>
+            <button id="btnPin" title="Pin this note" class="p-1 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700">
+              <svg id="iconHeart" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21.364l-7.682-7.682a4.5 4.5 0 010-6.364z"/>
+              </svg>
+            </button>
+          </div>
+          <div id="readerBody">
+            <p>Select a note, or press <span class="kbd">⌘/Ctrl</span> + <span class="kbd">K</span> to search. This is your lightweight, single-file DM wiki for <em>Storm King's Thunder</em>.</p>
+            <hr />
+            <pre class="text-xs bg-slate-50 p-3 rounded-lg overflow-auto"><code>Repo idea
+  ├── index.html              # this file
+  ├── app.js                  # app logic
+  ├── styles.css              # custom styles
+  ├── /notes/ (optional)      # if you split notes later
+  │   ├── sessions/
+  │   ├── npcs/
+  │   ├── locations/
+  │   ├── rules/
+  │   └── factions/
+  └── README.md</code></pre>
+          </div>
         </article>
       </div>
     </section>
@@ -118,8 +127,11 @@
     <button id="diagClose" class="mt-2 px-2 py-1 border rounded">Hide</button>
   </div>
   <script>
+    let updateCounter = 0;
     // Show diagnostics panel with a message
     function showDiag(msg){
+      updateCounter++;
+      console.log("Update A" + updateCounter);
       try{
         const box = document.getElementById('diag');
         const body = document.getElementById('diagBody');
@@ -159,6 +171,43 @@
         showDiag('JSON fetch failed (likely due to file:// or wrong path): ' + err);
       }
     })();
+
+    // Ensure the reader header with pin is always present, even if app.js re-renders the article
+    function ensureReaderHeader(){
+      const reader = document.getElementById('reader');
+      if(!reader) return;
+      let header = document.getElementById('readerHeader');
+      if(!header){
+        header = document.createElement('div');
+        header.id = 'readerHeader';
+        header.className = 'flex items-center justify-between bg-yellow-100 dark:bg-yellow-900 p-2 rounded';
+        header.innerHTML = '<h2 id="readerTitle" class="m-0">Welcome 👋</h2><button id="btnPin" title="Pin this note" class="p-1 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700"><svg id="iconHeart" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21.364l-7.682-7.682a4.5 4.5 0 010-6.364z"/></svg></button>';
+        reader.prepend(header);
+      }
+      // (Re)bind the click handler once
+      const btn = header.querySelector('#btnPin');
+      if(btn && !btn.dataset.bound){
+        btn.addEventListener('click', ()=>{
+          const svg = btn.querySelector('#iconHeart');
+          if(svg.getAttribute('fill') === 'none'){
+            svg.setAttribute('fill','currentColor');
+            svg.setAttribute('stroke','none');
+            svg.classList.add('text-slate-600');
+            showDiag('Pinned!');
+          } else {
+            svg.setAttribute('fill','none');
+            svg.setAttribute('stroke','currentColor');
+            svg.classList.remove('text-slate-600');
+            showDiag('Unpinned!');
+          }
+        });
+        btn.dataset.bound = '1';
+      }
+    }
+    // Initial ensure + watch for changes to #reader children (e.g., app.js replacing content)
+    ensureReaderHeader();
+    new MutationObserver(()=> ensureReaderHeader())
+      .observe(document.getElementById('reader'), { childList: true });
   </script>
 </body>
 </html>
