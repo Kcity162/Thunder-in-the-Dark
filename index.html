@@ -82,8 +82,8 @@
       <!-- Results + Reader -->
       <div class="md:col-span-2 grid gap-4">
         <article id="reader" class="card card-pad prose prose-slate max-w-none dark:prose-invert">
-          <div id="readerHeader" class="flex items-center justify-between bg-yellow-100 dark:bg-yellow-900 p-2 rounded">
-            <h2 id="readerTitle" class="m-0">Welcome 👋</h2>
+          <div id="readerHeader" class="flex items-center justify-between p-2 rounded">
+            <!-- <h2 id="readerTitle" class="m-0">Welcome 👋</h2> -->
             <button id="btnPin" title="Pin this note" class="p-1 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700">
               <svg id="iconHeart" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21.364l-7.682-7.682a4.5 4.5 0 010-6.364z"/>
@@ -180,8 +180,8 @@
       if(!header){
         header = document.createElement('div');
         header.id = 'readerHeader';
-        header.className = 'flex items-center justify-between bg-yellow-100 dark:bg-yellow-900 p-2 rounded';
-        header.innerHTML = '<h2 id="readerTitle" class="m-0">Welcome 👋</h2><button id="btnPin" title="Pin this note" class="p-1 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700"><svg id="iconHeart" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21.364l-7.682-7.682a4.5 4.5 0 010-6.364z"/></svg></button>';
+        //header.className = 'flex items-center justify-between  dark:bg-yellow-900 p-2 rounded';
+        //header.innerHTML = '<h2 id="readerTitle" class="m-0">Welcome 👋</h2><button id="btnPin" title="Pin this note" class="p-1 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700"><svg id="iconHeart" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21.364l-7.682-7.682a4.5 4.5 0 010-6.364z"/></svg></button>';
         reader.prepend(header);
       }
       // (Re)bind the click handler once
