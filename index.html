@@ -151,8 +151,9 @@
 
     // Optional quick JSON reachability check (safe even if the file does not exist)
     (async()=>{
+      // Use cache: 'default' to ensure the file is fetched fresh on page load and refreshed on reload, allowing normal browser caching behavior.
       try{
-        const r = await fetch('./st-wiki-notes.json', {cache:'no-store'});
+        const r = await fetch('./st-wiki-notes.json', {cache:'default'});
         showDiag('JSON fetch status: ' + r.status);
       }catch(err){
         showDiag('JSON fetch failed (likely due to file:// or wrong path): ' + err);

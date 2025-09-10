@@ -910,8 +910,7 @@
 {"id":"spell-storm-of-vengeance","title":"Storm of Vengeance","type":"spell","tags":["spells","conjuration","level-9","druid"],"body":"# Storm of Vengeance (9th-level conjuration)\nCasting Time: 1 action\nRange: Sight\nComponents: V,S\nDuration: Concentration, up to 1 minute\n\nA miles-wide storm unleashes thunder, acid rain, lightning, and hail in successive rounds."},
 {"id":"spell-true-resurrection","title":"True Resurrection","type":"spell","tags":["spells","necromancy","level-9","cleric","druid"],"body":"# True Resurrection (9th-level necromancy)\nCasting Time: 1 hour\nRange: Touch\nComponents: V,S,M (diamond worth 25,000 gp)\nDuration: Instant\n\nReturn a creature dead up to 200 years to life; restores missing parts and removes all conditions."},
 {"id":"spell-wish","title":"Wish","type":"spell","tags":["spells","conjuration","level-9","sorcerer","wizard"],"body":"# Wish (9th-level conjuration)\nCasting Time: 1 action\nRange: Self\nComponents: V\nDuration: Instant\n\nDuplicate any 8th-level or lower spell without components, or attempt other effects at DM discretion (risk of stress)."},
-{"id":"spell-aKev","title":"Kevin","type":"spell","tags":["spells","conjuration","level-9","sorcerer","wizard"],"body":"# Wish (9th-level conjuration)\nCasting Time: 1 action\nRange: Self\nComponents: V\nDuration: Instant\n\nDuplicate any 8th-level or lower spell without components, or attempt other effects at DM discretion (risk of stress)."},
-  {
+{
     "id": "god-amaunator",
     "title": "Amaunator (God)",
     "type": "god",
